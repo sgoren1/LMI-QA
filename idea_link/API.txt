@@ -1,1 +1,2 @@
-
+DeepL API
+https://www.deepl.com/en/docs-api/
