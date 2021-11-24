@@ -1,4 +1,4 @@
- wikistyle dataset:
+ wikistyle dataset EN:
  
  WikiQA (Wikipedia open-domain Question Answering)
  https://paperswithcode.com/dataset/wikiqa
@@ -6,6 +6,23 @@
  SQuAD (Stanford Question Answering Dataset)
  https://paperswithcode.com/dataset/squad
  
+ wiki dataset FR:
+ FQuAD (French Question Answering Dataset)
+ https://paperswithcode.com/dataset/fquad
+ 
+ squad FR
+ https://huggingface.co/datasets/qwant/squad_fr
+ 
+ other french datasets (4)
+ https://huggingface.co/datasets?languages=languages:fr-FR
+ 
+ 
+ A native-french-question-answering-dataset ??
+ https://recital.ai/scientific-publications/project-piaf-building-a-native-french-question-answering-dataset/
+ https://github.com/etalab/piaf
+ 
+ This paper proposes to unlock the main barrier to machine reading and comprehension French natural language texts
+ https://www.slideshare.net/AliKabbadj/french-machine-reading-for-question-answering
  
  Language dataset:
  
@@ -16,6 +33,12 @@
  dataset for evaluating cross-lingual question answering performance
  https://paperswithcode.com/dataset/xquad
  
+ XQA
+ XQA is a data which consists of a total amount of 90k question-answer pairs in nine languages for cross-lingual open-domain question answering.
+ https://paperswithcode.com/dataset/xqa
+ 
+ MKQA (Multilingual Knowledge Questions and Answers)(26 languages)
+ https://paperswithcode.com/dataset/mkqa
   
  LAMA
  LAnguage Model Analysis (LAMA) consists of a set of knowledge sources, each comprised of a set of facts. LAMA is a probe for analyzing the factual and commonsense knowledge contained in pretrained language models.
