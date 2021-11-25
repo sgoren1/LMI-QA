@@ -41,5 +41,11 @@
  https://paperswithcode.com/dataset/mkqa
   
  LAMA
- LAnguage Model Analysis (LAMA) consists of a set of knowledge sources, each comprised of a set of facts. LAMA is a probe for analyzing the factual and commonsense knowledge contained in pretrained language models.
+ Language Model Analysis (LAMA) consists of a set of knowledge sources, each comprised of a set of facts. LAMA is a probe for analyzing the factual and commonsense knowledge contained in pretrained language models.
  https://paperswithcode.com/dataset/lama
+ 
+ 
+ NewsQA: A Machine Comprehension Dataset
+  a challenging machine comprehension dataset of over 100,000 human-generated question-answer pairs
+  ( and other projects related to texte mining, reading comprehension and question answering )
+  https://www.connectedpapers.com/main/3eda43078ae1f4741f09be08c4ecab6229046a5c/NewsQA:-A-Machine-Comprehension-Dataset/graph
