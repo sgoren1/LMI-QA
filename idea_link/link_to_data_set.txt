@@ -52,3 +52,6 @@
   
   10 Q/A Datasets : 
   https://analyticsindiamag.com/10-question-answering-datasets-to-build-robust-chatbot-systems/
+  
+  Web scrapping basiscs :
+  https://towardsdatascience.com/web-scraping-basics-82f8b5acd45c
