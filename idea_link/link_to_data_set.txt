@@ -49,3 +49,6 @@
   a challenging machine comprehension dataset of over 100,000 human-generated question-answer pairs
   ( and other projects related to texte mining, reading comprehension and question answering )
   https://www.connectedpapers.com/main/3eda43078ae1f4741f09be08c4ecab6229046a5c/NewsQA:-A-Machine-Comprehension-Dataset/graph
+  
+  10 Q/A Datasets : 
+  https://analyticsindiamag.com/10-question-answering-datasets-to-build-robust-chatbot-systems/
