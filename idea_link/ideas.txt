@@ -4,4 +4,5 @@
 2: Article intéressant sur l'étape du " Forward propagation " ( essentielle pour construction des réseaux de neurones ) : 
     https://towardsdatascience.com/forward-propagation-in-neural-networks-simplified-math-and-code-version-bbcfef6f9250
 
-
+3: Lien wikipédia expliquant le terme " Fonction d'activation " , utilisée pour construction du réseau de neurones aussi : 
+    https://fr.wikipedia.org/wiki/Fonction_d%27activation
