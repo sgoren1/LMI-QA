@@ -9,3 +9,9 @@
 
 4: Module python qui pourrait nous intéresser , éventuellement pour la partie des rapports scientifiques ? : 
     https://scikit-learn.org/stable/
+
+5: Lien  super intéressant expliquant ce qu'est le text-mining et étapes en quelles il consiste : 
+    https://www.fosteropenscience.eu/content/text-mining-101
+
+6: Lien super intéressant sur le NLP Nature Language Processing , avec documentation pour l'utiliser sur Python : 
+    https://www.ibm.com/cloud/learn/natural-language-processing
