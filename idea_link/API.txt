@@ -1,2 +1,4 @@
 DeepL API
 https://www.deepl.com/en/docs-api/
+spacy API french
+https://spacy.io/models/fr
