@@ -1,2 +1,7 @@
 1: Article intéressant sur la construction des datasets et l'entrainement d'une IA : 
     https://towardsdatascience.com/how-to-train-your-artificial-intelligence-the-hidden-code-20cb3a35e1d6
+
+2: Article intéressant sur l'étape du " Forward propagation " ( essentielle pour construction des réseaux de neurones ) : 
+    https://towardsdatascience.com/forward-propagation-in-neural-networks-simplified-math-and-code-version-bbcfef6f9250
+
+
