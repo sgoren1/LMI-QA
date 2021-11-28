@@ -1,1 +1,2 @@
-1:
+1: Article intéressant sur la construction des datasets et l'entrainement d'une IA : 
+    https://towardsdatascience.com/how-to-train-your-artificial-intelligence-the-hidden-code-20cb3a35e1d6
