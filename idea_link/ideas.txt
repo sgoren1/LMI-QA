@@ -6,3 +6,6 @@
 
 3: Lien wikipédia expliquant le terme " Fonction d'activation " , utilisée pour construction du réseau de neurones aussi : 
     https://fr.wikipedia.org/wiki/Fonction_d%27activation
+
+4: Module python qui pourrait nous intéresser , éventuellement pour la partie des rapports scientifiques ? : 
+    https://scikit-learn.org/stable/
