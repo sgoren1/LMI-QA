@@ -19,3 +19,6 @@
 7: Lien Building an Intelligent QA System avec NLP, avec le github
     https://medium.com/voice-tech-podcast/building-an-intelligent-qa-system-with-nlp-and-milvus-75b496702490
     https://github.com/chatopera/insuranceqa-corpus-zh
+
+8: Chaine youtube de malade avec 600 videos, si on se chauffe a tous les regarder on peut plier le projet en quelques jours easy
+    https://www.youtube.com/c/ArtificialIntelligenceAllinOne/playlists
