@@ -16,6 +16,9 @@
  other french datasets (4)
  https://huggingface.co/datasets?languages=languages:fr-FR
  
+ Question answering system for the french language
+ http://ceur-ws.org/Vol-1170/CLEF2004wn-QACLEF-Perrot2004.pdf
+ 
  
  A native-french-question-answering-dataset ??
  https://recital.ai/scientific-publications/project-piaf-building-a-native-french-question-answering-dataset/
