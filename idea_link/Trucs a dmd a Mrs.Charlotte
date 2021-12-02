@@ -1,9 +1,23 @@
 Notre projet : Simple système de Q/A sur base de Wikipédia
 
 Questions :
--> Possible d'être plus spécifique ? Car les Q/A ça existe déjà, on ne sait pas quoi faire vraiment (à part les recherches/documents).
+-> Possible d'être plus spécifique ? Car les Q/A ça existe déjà, on ne sait pas quoi faire vraiment (à part les recherches/documents)
+  Si vous faites la même chose que dans un article, c'est déjà très bien ! Mais vous pouvez :
+  - avoir une interface/app pour les gens
+  - essayer de trouver comment faire pour expliquer le sujet (vulgarisation)
+  - décider de ce que vous voulez faire comme rapport scientifique
 -> Idées de problèmatiques ? Pour être justement plus spécifique.
+  - comparer les datasets
+  - jouer sur les paramètres d'un modèle
+  - jouer avec différents modèles
+  - comparer les langues
 -> C'est mieux de faire le Q/A en Français ou en Anglais ? Chacun a ses point positifs et négatifs et on hésite encore.
+  Je me concentrerais sur le français (simplement parce que la plupart des gens au PdS parle français)
 -> POssible d'avoir des exemples des années précédentes ?
+  Cool
 -> Est-ce que les links qu'on a mit ici sur le GIT sont pertinants ? 
--> Quel est l'objectif du projet, le challenge ? Les Q/A existent déjà c'est pour ça.
+  OUI
+-> Quel est l'objectif du projet, le challenge ? Les Q/A existent déjà c'est pour ça
+  En deux phases :
+  - Communication au grand public (PDS, la vidéo,...) -> 50%
+  - Scientifique : rapport -> 50%
