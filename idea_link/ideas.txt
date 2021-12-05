@@ -22,3 +22,6 @@
 
 8: Chaine youtube de malade avec 600 videos, si on se chauffe a tous les regarder on peut plier le projet en quelques jours easy
     https://www.youtube.com/c/ArtificialIntelligenceAllinOne/playlists
+
+9: Train the neural network using Google Colab 
+    https://www.analyticsvidhya.com/blog/2021/05/a-complete-hands-on-guide-to-train-your-neural-network-model-on-google-colab-gpu/
