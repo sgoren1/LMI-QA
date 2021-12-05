@@ -25,3 +25,6 @@
 
 9: Train the neural network using Google Colab 
     https://www.analyticsvidhya.com/blog/2021/05/a-complete-hands-on-guide-to-train-your-neural-network-model-on-google-colab-gpu/
+
+10: Another one (Keras library)
+    https://realpython.com/python-keras-text-classification/#choosing-a-data-set
