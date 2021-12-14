@@ -1,0 +1,14 @@
+QA system only with python
+https://github.com/oasysokubo/NarrowQA
+https://github.com/aashaar/Question-Answering-System-NLP
+
+QA system with jupyter notebook
+https://github.com/rameshavinash94/Wiki_QA_System  # the better ?
+https://github.com/cange017/ChatBot # with a chatbot ?
+https://github.com/yuriak/QASystem
+https://github.com/IEEE-NITK/open-qas
+https://github.com/to314as/Question-answering-with-Wikipedia---NLP-project-2019
+
+front end
+https://github.com/Karnav7/qaSystemFrontEnd
+https://github.com/anbo-de/frontEnd
