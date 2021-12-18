@@ -1,6 +1,6 @@
 QA system only with python
 https://github.com/oasysokubo/NarrowQA
-https://github.com/aashaar/Question-Answering-System-NLP
+https://github.com/aashaar/Question-Answering-System-NLP # j'ai test ,mais j'ai eu http 404 not found comme dans l'issue ....
 
 QA system with jupyter notebook
 https://github.com/rameshavinash94/Wiki_QA_System  # the better ?
