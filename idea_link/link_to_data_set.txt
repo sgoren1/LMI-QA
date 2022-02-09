@@ -58,3 +58,6 @@
   
   Web scrapping basiscs :
   https://towardsdatascience.com/web-scraping-basics-82f8b5acd45c
+  
+  Tensor-flow sentence-encoder
+  https://tfhub.dev/s?q=sentence-encoder
