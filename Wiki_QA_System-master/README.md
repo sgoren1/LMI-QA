@@ -1,5 +1,7 @@
 # NLP QA System for Wikipedia 
 
+ref to the original author: _https://github.com/rameshavinash94/Wiki_QA_System_
+
 Wiki QA Web Applicaiton that dynamically locates wikipedia sources and applies NLP to answer user questions. A QA system will assist in quickly locating information.
 
 **Deployment URL:** _https://cmpe256-q4uake3apq-uc.a.run.app_
