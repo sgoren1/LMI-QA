@@ -17,20 +17,23 @@ Il existe aujourd'hui des outils très puissants pour le traitement de texte qui
 internet.
 
 
+J'ai lu quelque part que les intelligences artificielles s'entrainent , c'est vrai ? 
 
-Humm , intéressant ... Mais comment fait-tu donc pour répondre à la question ? 
+Une intelligence artificielle doit apprendre, comme le fait un humain pour toute chose dans la vie . En gros, si on me
+donne beaucoup de texte à analyser , et qu'on me corrige à chaque fois que je me trompe , je vais devenir de plus en plus puissante , et fournir des réponses de plus 
+en plus correctes. C'est ce qu'on appel de l'apprentissage supervisé , ou en anglais Supervised Learning . 
 
--réseau de neuronnes bla bla bla et parle d'apprentissage
+Pour ce projet par exemple , j'utilise un modèle entrainé disponible sur internet , il s'appel Piaf et il est très performant . 
 
+Humm , intéressant ... Mais comment fais-tu donc pour répondre à la question ? 
 
+Une fois la question analysée et découpée , je peux en soutirer les mots clés , comme je l'ai expliqué précedemment , cela va 
+me servir à faire une recherche dans ma base de données . Pour mon cas j'utilise celle inspirée de Wikipédia , pour trouver les meilleurs
+pages en relation avec mes mots clés . Une fois cela fait , je peux combiner ces résultats et employer mon réseau de neuronnes super entrainé , 
+qui me donnera les résultats . 
 
-Quand tu dis apprendre , pour de vrai ? 
+Un réseau de neuronnes , comme dans un  cerveau humain ? 
 
-Une intelligence artificielle s'entraine , comme le fait un humain pour toute chose dans la vie . En résumé , si on me
-donne beaucoup de texte à analyser , je vais devenir de plus en plus puissante , et fournir des réponses de plus en plus justes.
-C'est le role principal des " data sets " ou bases de données en français : ce sont de très grands ensemble de données , desquels on peut 
-soutirer de l'information à propos de sujets différents . Pour votre projet, je me base de Wikipédia par exemple . 
-
-
+Pas vraiment non , mais ça y ressemble . ...... 
 
 
