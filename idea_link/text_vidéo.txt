@@ -1,0 +1,36 @@
+Les programmes intelligents sont devenus aujourd'hui répandues et très présents dans nos vies . Une des fonctionnalité les plus utilisées qu'offre l'intelligence
+artificielle est le système question/réponse . Le principe est simple : recevoir une question , l'analiser , la comprendre , puis essayer d'y répondre
+
+Mais comment ça marche vraiment ? 
+Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son système de question/réponse .
+
+Dis nous Rexana, comment tu comprends nos questions ? (voix robotique a la siri)
+
+Je l'analyse , ce qui me permet de délimiter les mots et la ponctuation , exemple : " Je / mange / une / pomme " (superbe animation de découpage de la phrase).
+C'est ce qu'on appel l'analyse syntaxique . 
+ 
+Puis vient l'analyse sémantique : faire en sorte de " comprendre " les mots clés . Exemple : " j'ai perdu mon mot de passe " , déterminer que 
+le mot " mot de passe " se rapproche beaucoup des mots " identifiant " ou " utilisateur " par exemple . 
+
+Cela m'aide à " comprendre " la phrase , et de cibler les thèmes qui s'en rapprochent . 
+Il existe aujourd'hui des outils très puissants pour le traitement de texte qui font tout cela dans plusieurs langues , et accessibles facilement sur 
+internet.
+
+
+
+Humm , intéressant ... Mais comment fait-tu donc pour répondre à la question ? 
+
+-réseau de neuronnes bla bla bla et parle d'apprentissage
+
+
+
+Quand tu dis apprendre , pour de vrai ? 
+
+Une intelligence artificielle s'entraine , comme le fait un humain pour toute chose dans la vie . En résumé , si on me
+donne beaucoup de texte à analyser , je vais devenir de plus en plus puissante , et fournir des réponses de plus en plus justes.
+C'est le role principal des " data sets " ou bases de données en français : ce sont de très grands ensemble de données , desquels on peut 
+soutirer de l'information à propos de sujets différents . Pour votre projet, je me base de Wikipédia par exemple . 
+
+
+
+
