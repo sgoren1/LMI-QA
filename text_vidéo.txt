@@ -1,15 +1,15 @@
-Les programmes intelligents sont devenus aujourd'hui répandues et très présents dans nos vies . Une des fonctionnalité les plus utilisées qu'offre l'intelligence
-artificielle est le système question/réponse . Le principe est simple : recevoir une question , l'analiser , la comprendre , puis essayer d'y répondre
+De nos jours, les programmes intelligents sont très répandues et très présents dans la vie de tout les jours. Une des fonctionnalité les plus utilisées qu'offre l'intelligence
+artificielle est le système question/réponse. Le principe est simple : Nous posons une question à un programme, ce dernier l'analyse et le comprend pour enfin essayer d'y répondre.
 
-Mais comment ça marche vraiment ? 
-Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son système de question/réponse .
+MMais comment tout cela fonctionne ? 
+Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son système de question/réponse.
 
 Dis nous Rexana, comment tu comprends nos questions ? (voix robotique a la siri)
 
-Je l'analyse , ce qui me permet de délimiter les mots et la ponctuation , exemple : " Je / mange / une / pomme " (superbe animation de découpage de la phrase).
-C'est ce qu'on appel l'analyse syntaxique . 
+Je l'analyse, ce qui me permet de délimiter les mots et la ponctuation, exemple : " Je / mange / une / pomme " (superbe animation de découpage de la phrase).
+C'est ce qu'on appel l'analyse syntaxique. 
  
-Puis vient l'analyse sémantique : faire en sorte de " comprendre " les mots clés . Exemple : " j'ai perdu mon mot de passe " , déterminer que 
+Ensuite, j'effectue une analyse sémantique : c-à-d faire en sorte de "comprendre" les mots clés. Par exemple : " j'ai perdu mon mot de passe " , je comprends que 
 le mot " mot de passe " se rapproche beaucoup des mots " identifiant " ou " utilisateur " par exemple . 
 
 Cela m'aide à " comprendre " la phrase , et de cibler les thèmes qui s'en rapprochent . 
@@ -17,18 +17,18 @@ Il existe aujourd'hui des outils très puissants pour le traitement de texte qui
 internet.
 
 
-J'ai lu quelque part que les intelligences artificielles s'entrainent , c'est vrai ? 
+J'ai lu quelque part que les intelligences artificielles s'entrainent d'elles-mêmes afin de fonctionner correctement, est-ce vrai ? 
 
 Une intelligence artificielle doit apprendre, comme le fait un humain pour toute chose dans la vie . En gros, si on me
-donne beaucoup de texte à analyser , et qu'on me corrige à chaque fois que je me trompe , je vais devenir de plus en plus puissante , et fournir des réponses de plus 
-en plus correctes. C'est ce qu'on appel de l'apprentissage supervisé , ou en anglais Supervised Learning . 
+donne beaucoup de texte à analyser , et qu'on me corrige à chaque fois que je me trompe , je vais devenir de plus en plus performant , et je fournirai des réponses de plus 
+en plus correctes. C'est ce qu'on appel de l'apprentissage supervisé (, ou en anglais Supervised Learning .)
 
 Pour ce projet par exemple , j'utilise un modèle entrainé disponible sur internet , il s'appel Piaf et il est très performant . 
 
-Humm , intéressant ... Mais comment fais-tu donc pour répondre à la question ? 
+Humm , intéressant ... Mais au final, comment fais-tu donc pour répondre à la question ? 
 
 Une fois la question analysée et découpée , je peux en soutirer les mots clés , comme je l'ai expliqué précedemment , cela va 
-me servir à faire une recherche dans ma base de données . Pour mon cas j'utilise celle inspirée de Wikipédia , pour trouver les meilleurs
+me servir à faire une recherche dans ma base de données . Moi par exemple j'utilise celle inspirée de Wikipédia , pour trouver les meilleurs
 pages en relation avec mes mots clés . Une fois cela fait , je peux combiner ces résultats et employer mon réseau de neuronnes super entrainé , 
 qui me donnera les résultats . 
 
@@ -36,4 +36,4 @@ Un réseau de neuronnes , comme dans un  cerveau humain ?
 
 Pas vraiment non , mais ça y ressemble . ...... 
 
-
+/!\ : Pas oublier que le thème est l'exploration et donc caler ce mot au moins une fois quelque part
