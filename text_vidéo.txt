@@ -4,7 +4,7 @@ artificielle est le système question/réponse. Le principe est simple : Nous po
 MMais comment tout cela fonctionne ? 
 Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son système de question/réponse.
 
-Dis nous Rexana, comment tu comprends nos questions ? (voix robotique a la siri)
+Dis nous Rexana, comment comprends-tu nos questions ? (voix robotique a la siri)
 
 Je l'analyse, ce qui me permet de délimiter les mots et la ponctuation, exemple : " Je / mange / une / pomme " (superbe animation de découpage de la phrase).
 C'est ce qu'on appel l'analyse syntaxique. 
