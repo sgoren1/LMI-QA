@@ -1,4 +1,5 @@
 import wikipedia
+import re
 
 
 class DocumentRetrival:
@@ -8,6 +9,17 @@ class DocumentRetrival:
         self.search_text = ''
         self.search_results_pages = []
         wikipedia.set_lang("fr")  # to be in french
+
+    def UserInputJson(self, jsonMessage):  # not finish
+        '''
+        This Function is to get user query for document retrival by parsing Json
+        '''
+        self.question = ""  # change with the text input
+        if not self.question:
+            raise Exception('User input is empty')
+            # add search_text
+        self.search_text = self.question
+        return self.search_text
 
     def UserInput(self):
         '''
