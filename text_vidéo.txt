@@ -35,15 +35,16 @@ Humm, intéressant... Mais au final, comment fais-tu donc pour répondre à la q
 
 -> Une fois la question analysée et découpée, je peux en soutirer les mots clés (Effet vidéo: je met un texte et je met en évidence des mots en plus grand), comme je 
 l'ai expliqué précedemment, cela va me servir à faire une recherche dans ma base de données. Moi par exemple j'utilise celle inspirée de Wikipédia, pour trouver les meilleures
-pagess en relation avec mes mots clés. Une fois cela fait, je peux combiner ces résultats et employer mon réseau de neuronnes super entrainé, qui me donnera les résultats. 
+pagess en relation avec mes mots clés. Une fois cela fait, je peux combiner ces résultats et employer mon réseau de neurones super entrainé, qui me donnera les résultats. 
 
 === RESEAUX DE NEURONNE ===
 
-Hein quoi, un réseau de neuronnes, comme dans un cerveau humain ? 
+Hein quoi, un réseau de neurones, comme dans un cerveau humain ? 
 
--> Pas vraiment non , mais ça y ressemble . ...... 
+-> Pas vraiment non , mais ça y ressemble . En réalité les réseaux de neurones sont des structures informatiques dont le concept est inspiré du système nerveux humain . Dans un cerveau , il existe des millions de neurones , qui transmettent de l'information depuis ou vers le reste du corps . En informatique , un  réseau de neurones est composé de couches ( layers en anglais ) : la couche des entrées , et la couche des sorties . Chaque couches peut contenir des centaines voir de milliers de noueuds , qui représentent les neurones . Les noeuds sont ensuite liés entre eux par des arretes , d'où cette forme d'arbre . Plus le problème est complexe , plus le nombre de noeuds et de couches est grand . 
 
-/!\ : Pas oublier que le thème est l'exploration et donc caler ce mot au moins une fois quelque part
+Il faut aussi savoir que pour faire passer l'information d'un noeud vers un autre , on fait appel à une fonction mathématique , qui varie d'un réseau de neurones à un autre . Cette fonction va affecter notre résultat ( couche de sortie ) . Le processus d'apprentissage se fait ici , quand le réseau fait varier cette fonction , pour nous donner un résultat de plus en plus correcte . 
+
 
 === OUTRO ===
 
