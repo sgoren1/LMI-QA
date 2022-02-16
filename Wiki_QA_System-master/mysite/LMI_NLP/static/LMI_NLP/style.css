@@ -1,6 +1,116 @@
-li a {
-    color: green;
+
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 5952px;
+    background: #442D7C;
 }
-body {
-    background: white url("images/background.jpg") no-repeat;
+
+
+.blue {color : #007BB8; }
+.purple {color : #9D7FC6;}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    height: 100vh;
 }
+
+
+.logo{
+    position: absolute;
+    width: 257px;
+    height: 53px;
+    left: 94px;
+    top: 39px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    color: #E5E5E5;
+}
+
+.menu{
+   position: absolute;
+  width: 643px;
+  height: 27px;
+  left: 900px;
+  top: 50px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #9D7FC6
+
+}
+
+.H1 {
+    position: absolute;
+    width: 698px;
+    height: 324px;
+    left: 94px;
+    top: 306px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 81px;
+
+    color: #FFFFFF;
+}
+
+
+
+.CH1{
+    position: absolute;   
+    width: 670px;
+    height: 180px;
+    left: 0px;
+    top: 350px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+
+    color: #FFFFFF;
+}
+
+
+.Rex {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 47.57%;
+    right: -1.33%;
+    top: 2.5%;
+    bottom: 81.77%;
+    transform: matrix(1, -0.15, 0, 0.99, 0, 0);
+    }
+
