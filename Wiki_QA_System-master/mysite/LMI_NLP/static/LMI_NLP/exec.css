@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #442D7C;
+}
+
+.logo{
+    position: absolute;
+    width: 257px;
+    height: 53px;
+    left: 94px;
+    top: 39px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 49px;
+    color: #E5E5E5;
+}
+
+.menu{
+    position: absolute;
+    width: 700px;
+    height: 27px;
+    left: 1000px;
+    top: 50px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 27px;
+    font-size: 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #9D7FC6
+}
+
+.form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 931px;
+    height: 100px;
+
+    top: 450px;
+    bottom: 300px;
+    border-radius: 60px;
+}
+
+.buttonS{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 203px;
+    height: 62px;
+
+    top: 700px;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
