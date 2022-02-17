@@ -15,8 +15,9 @@ def index(request):
 """
 
 
-class IndexView(generic.ListView):
-    template_name = 'LMI_NLP/index.html'
+class RexanaMain(generic.ListView):
+    template_name = 'LMI_NLP/Rexana.HTML'
+    #template_name = 'LMI_NLP/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
