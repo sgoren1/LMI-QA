@@ -1,20 +1,20 @@
+ {% load static%}
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link rel="stylesheet" type="text/css" href="{% static 'LMI_NLP/style.css' %}">
+
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" type="text/css" href="{% static 'LMI_NLP/style.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <script src="animation.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rexana</title>
     
 </head>
-
 
 <body>
 
@@ -45,7 +45,7 @@
                 </div>
                   
                 <div class="rex">
-                    <img src="images/rex.svg" />
+                   {% load static %}  <img src="{% static "LMI_NLP/images/rex.svg"%}" alt=""/>
                 </div>
 
           
@@ -80,7 +80,8 @@
         </div> 
 
         <div class="S1">
-            <img src="images/book.svg" />
+            {% load static %}<img src="{% static "LMI_NLP/images/book.svg"%}" alt=""/>
+
         </div>
 
         <div class="sousT4">Etape 2</div>       
@@ -95,10 +96,10 @@
         <div class="content5">
             determination du theme : grace a l'Analyse semantique et syntaxique, il est en effet possible de trouver le theme qu'englobe la question, qu'on explorera par la suite pour trouver la reponse
                 a la question
-
-            </p>
+            
             <div class="S3">
-                <img src="images/theme.svg" />
+                          {% load static %}   <img src="{% static "LMI_NLP/images/theme.svg"%}" alt=""/>
+
             </div>
 
         </div> 
@@ -108,7 +109,8 @@
             Ciblage de la reponse : apres avoir trouver la reponse adequate, Rexana nous la transmet en indiquant egalement le lien Wikipedia dans lequel elle a pioche la reponse
             
             <div class="S4">
-                <img src="images/answer.svg" />
+                {% load static %}<img src="{% static "LMI_NLP/images/answer.svg"%}" alt=""/>
+
             </div>
         </div> 
 
@@ -116,15 +118,15 @@
                 Qui sommes-nous?
             </div> 
         
-            <div class="WI">   <img src="/images/wac.svg"> </div>
-            <div class="YI">   <img src="/images/wac.svg"> </div>
-            <div class="ZS">   <img src="/images/wac.svg"> </div>
-            <div class="IS">   <img src="/images/wac.svg"> </div>
-            <div class="HO">   <img src="/images/wac.svg"> </div>
-            <div class="SR">   <img src="/images/wac.svg"> </div>
-            <div class="SA">   <img src="/images/wac.svg"> </div>
-            <div class="MA">   <img src="/images/wac.svg"> </div>
-            <div class="charlotte">   <img src="/images/char.svg"> </div>
+            <div class="WI">    {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="YI">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="ZS">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="IS">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="HO">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="SR">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="SA">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="MA">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="charlotte">   {% load static %}<img src="{% static "LMI_NLP/images/char.svg"%}" alt=""/> </div>
 
         <footer>
         </footer> 
