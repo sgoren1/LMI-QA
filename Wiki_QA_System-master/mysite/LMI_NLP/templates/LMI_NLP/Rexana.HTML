@@ -5,93 +5,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href = "style.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="animation.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rexana</title>
+    
 </head>
 
 
 <body>
 
-                <div class="navbar">
+                <div class="navbar" id="homepage">
                         <h2 class="logo">Rexana</h2>
                     <div class="menu">
                         <ul>
-                            <li><a href="homepage">Accueil</a></li>
-                            <li><a href="us">Qui sommes-nous ?</a></li>
-                            <li><a href="steps">Fonctionnement</a></li>
-                            <li><a href="Go">Posez votre question</a></li>
+                            <li><a href="#homepage">Accueil</a></li>
+                            <li><a href="#steps">Fonctionnement</a></li>
+                            <li><a href="#us">Qui sommes-nous ?</a></li>
+                            <li><a href="#Go">Posez votre question</a></li>
                         </ul>
                     </div>
                 </div>
+            
 
-
-                <div class = "H1">
+                <div class = "H1" > 
                     <section id = "homepage">
-                        <h1>Une  Intelligence qui explorera les connaissances
-                            du monde pour vous</h1>
+                        <h1>Une <span style="color : #1563A5">intelligence</span> qui <span style="color : #9D7FC6;">explorera</span> les
+                            <span style="color : #9D7FC6;">connaissances</span>  du monde pour <span style="color : #9D7FC6;">vous</span></h1> 
                         <div class = "CH1">
-                            <p>
                                 Rexana est une intelligence artificielle
                                 qui saura repondre a vos questions,
                                 en faisant, comme toutes personne humaine ferait
                                 quand elle a une question: chercher dans Wikipedia
-                            </p>
                         </div>
-
-
                     </section>
-
+                </div>
+                  
+                <div class="rex">
+                    <img src="images/rex.svg" />
                 </div>
 
-                <div class="Rex"> <img src = "IA.svg" alt="Rexana"/> </div>
+          
 
 
+         <div class="titre" id="steps">Fonctionnement</div>
+        <div class="sousT">L’intelligence Artificielle, c’est quoi?</div>       
+        <div class="content1">
+            L’intelligence artificielle (IA) désigne, de manière générale, le comportement comparable à celui d’un être humain, 
+            présenté par une machine ou un système. Dans la forme la plus élémentaire de l’IA, les ordinateurs sont programmés pour 
+            « imiter » le comportement humain, en exploitant des quantités massives de données issues d’exemples antérieurs de 
+            comportements similaires. Cela peut aller de la reconnaissance des différences entre un chat et un oiseau à 
+            l’exécution d’activités complexes dans une usine de fabrication.
 
+        </div> 
 
-        <section id = "us">
-        </section>
+        <div class="sousT2">Rexana c'est qui ?</div>       
+        <div class="content2">
+            Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit.Pellentesque dui dolor, lacinia at
+             felis vel, luctus laoreet eros. Phasellus in
+            tempus sapien. Morbi sit amet ligula nec odio
 
-        <section id = "steps">
-            <h1>Comment ca marche ?</h1>
+        </div> 
 
-            <h2>L’intelligence Artificielle, c’est quoi?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.Pellentesque dui dolor, lacinia at
-                 felis vel, luctus laoreet eros. Phasellus in
-                tempus sapien. Morbi sit amet ligula nec odio</p>
+        <div class="sousT3">Etape 1</div>       
+        <div class="content3">
+            Analyse syntaxique de la phrase : en délimitant les mots et la ponctuation; Rexana comprend qu'il y a
+            des espaces entre les mots et que ces derniers forment une phrase, grâce au point. 
+            Exemple : "Je / mange / une / pomme.".
 
-            <h2>Rexana, c’est qui?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.Pellentesque dui dolor, lacinia at
-                    felis vel, luctus laoreet eros. Phasellus in
-                tempus sapien. Morbi sit amet ligula nec odio</p>
+        </div> 
 
-            <h2>Etape 1</h2>
-            <p>Analyse syntaxique de la phrase : en délimitant les mots et la ponctuation; Rexana comprend qu'il y a
-                des espaces entre les mots et que ces derniers forment une phrase, grâce au point.
-                Exemple : "Je / mange / une / pomme.". </p>
+        <div class="S1">
+            <img src="images/book.svg" />
+        </div>
 
-            <h2>Etape 2</h2>
-            <p>Analyse sémantique : determination et comprehension des mots cles.
-                Exemple : "J'ai perdu mon mot de passe", Rexana comprend que
-                 "mot de passe" se rapproche beaucoup des mots "identifiant" ou "utilisateur".
-                </p>
+        <div class="sousT4">Etape 2</div>       
+        <div class="content4">
+            Analyse sémantique : determination et comprehension des mots cles. 
+            Exemple : "J'ai perdu mon mot de passe", Rexana comprend que 
+             "mot de passe" se rapproche beaucoup des mots "identifiant" ou "utilisateur".
 
-            <h2>Etape 3</h2>
-            <p>determination du theme : grace a l'Analyse semantique et syntaxique, il est en effet possible de trouver le theme qu'englobe la question, qu'on explorera par la suite pour trouver la reponse
-                a la queestion
+        </div> 
+
+        <div class="sousT5">Etape 3</div>       
+        <div class="content5">
+            determination du theme : grace a l'Analyse semantique et syntaxique, il est en effet possible de trouver le theme qu'englobe la question, qu'on explorera par la suite pour trouver la reponse
+                a la question
+
             </p>
+            <div class="S3">
+                <img src="images/theme.svg" />
+            </div>
 
-            <h2>Etape 4</h2>
-            <p>Ciblage de la reponse : apres avoir trouver la reponse adequate, Rexana nous la transmet en indiquant egalement le lien Wikipedia dans lequel elle a pioche la reponse</p>
+        </div> 
 
+        <div class="sousT6">Etape 4</div>       
+        <div class="content6">
+            Ciblage de la reponse : apres avoir trouver la reponse adequate, Rexana nous la transmet en indiquant egalement le lien Wikipedia dans lequel elle a pioche la reponse
+            
+            <div class="S4">
+                <img src="images/answer.svg" />
+            </div>
+        </div> 
 
-        </section>
+        <div class="us" id="us">
+                Qui sommes-nous?
+            </div> 
+        
+            <div class="WI">   <img src="/images/wac.svg"> </div>
+            <div class="YI">   <img src="/images/wac.svg"> </div>
+            <div class="ZS">   <img src="/images/wac.svg"> </div>
+            <div class="IS">   <img src="/images/wac.svg"> </div>
+            <div class="HO">   <img src="/images/wac.svg"> </div>
+            <div class="SR">   <img src="/images/wac.svg"> </div>
+            <div class="SA">   <img src="/images/wac.svg"> </div>
+            <div class="MA">   <img src="/images/wac.svg"> </div>
+            <div class="charlotte">   <img src="/images/char.svg"> </div>
 
         <footer>
-        </footer>
-
+        </footer> 
+        
 </body>
 </html>
