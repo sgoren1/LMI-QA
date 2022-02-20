@@ -15,6 +15,8 @@ def index(request):
 """
 
 
+
+
 class RexanaMain(generic.ListView):
     template_name = 'LMI_NLP/Rexana.HTML'
     #template_name = 'LMI_NLP/index.html'
@@ -26,16 +28,6 @@ class RexanaMain(generic.ListView):
         published in the future).
         """
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
-
-
-# class RexanaSteps(generic.ListView):
-#     template_name = 'LMI_NLP/Steps.HTML'  # add the name
-#
-# class RexanaUs(generic.ListView):
-#     template_name = 'LMI_NLP/Us.HTML'  # add the name
-#
-# class RexanaGo(generic.FormView):
-#     template_name = 'LMI_NLP/Go.HTML'
 
     # old one
     # def get_queryset(self):
@@ -104,3 +96,7 @@ def vote(request, question_id):
         # user hits the Back button.
         # redirect the user after the post,reverse() to avoid to hardcode the url
         return HttpResponseRedirect(reverse('LMI_NLP:results', args=(question.id,)))
+
+
+def Execution(request) :
+    return render(request,'LMI_NLP/Execution.html')
