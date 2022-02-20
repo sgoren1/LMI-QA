@@ -20,7 +20,7 @@ urlpatterns = [
 """
 urlpatterns = [
     path('', views.RexanaMain.as_view(), name='Rexana'),
-    path('Steps', views.RexanaSteps.as_view(), name='Steps'),
-    path('Us', views.RexanaUs.as_view(), name='Us'),
-    path('Go', views.RexanaGo.as_view(), name='Go'),
+    # path('Steps', views.RexanaSteps.as_view(), name='Steps'),
+    # path('Us', views.RexanaUs.as_view(), name='Us'),
+    # path('Go', views.RexanaGo.as_view(), name='Go'),
 ]

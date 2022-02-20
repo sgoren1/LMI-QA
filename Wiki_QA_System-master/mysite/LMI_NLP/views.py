@@ -17,20 +17,30 @@ def index(request):
 
 class RexanaMain(generic.ListView):
     template_name = 'LMI_NLP/Rexana.HTML'
-    # template_name = 'LMI_NLP/index.html'
+    #template_name = 'LMI_NLP/index.html'
     context_object_name = 'latest_question_list'
 
+    def get_queryset(self):
+        """
+        Return the last five published questions (not including those set to be
+        published in the future).
+        """
+        return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
 
-class RexanaSteps(generic.ListView):
-    template_name = 'LMI_NLP/Steps.HTML'  # add the name
 
+# class RexanaSteps(generic.ListView):
+#     template_name = 'LMI_NLP/Steps.HTML'  # add the name
+#
+# class RexanaUs(generic.ListView):
+#     template_name = 'LMI_NLP/Us.HTML'  # add the name
+#
+# class RexanaGo(generic.FormView):
+#     template_name = 'LMI_NLP/Go.HTML'
 
-class RexanaUs(generic.ListView):
-    template_name = 'LMI_NLP/Us.HTML'  # add the name
-
-
-class RexanaGo(generic.FormView):
-    template_name = 'LMI_NLP/Go.HTML'
+    # old one
+    # def get_queryset(self):
+    #     """Return the last five published questions."""
+    #     return Question.objects.order_by('-pub_date')[:5]
 
 
 # try except written in hand
