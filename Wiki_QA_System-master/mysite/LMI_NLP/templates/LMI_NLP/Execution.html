@@ -40,10 +40,11 @@ input[type=text] {
     </div>
 
     <div class="form">
-        <form>
+        <form action="results.html" method="post"> <!-- action should be changed -->
             <label for="fquestion"></label>
-            <input type="text" id="fquestion" name="fquestion" placeholder="Your question..">
-         </form>
+            <input type="text" id="fquestion" name="fquestion" placeholder="Your question.." value="{{ current_question }}">
+        <input type="submit" value="OK">
+        </form>
     </div>
 
 </body>

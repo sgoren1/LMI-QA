@@ -1,6 +1,7 @@
 import datetime
 from django.db import models
 from django.utils import timezone
+from django import forms
 
 
 # we need to get the question
@@ -33,3 +34,7 @@ class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
+
+
+class QuestionForm(forms.Form):
+    question = forms.CharField(label='Question',max_length=100)

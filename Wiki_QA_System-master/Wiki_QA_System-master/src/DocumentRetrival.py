@@ -32,6 +32,17 @@ class DocumentRetrival:
         self.search_text = self.question
         return self.search_text
 
+    def UserInput(self, question):
+        '''
+        This Function is to get user query for document retrival from the site
+        '''
+        self.question = question
+        if not self.question:
+            raise Exception('User input is empty')
+        # add search_text
+        self.search_text = self.question
+        return self.search_text
+
     def PreprocessUserInput(self):
         '''
         This Function is to preprocess user input and extract only the nceesary POS prior passing user query document retrival

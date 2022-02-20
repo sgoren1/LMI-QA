@@ -5,7 +5,8 @@ from django.views import generic
 from django.utils import timezone
 from django.http import Http404
 from django.template import loader
-from .models import Question, Choice
+from .models import Question, Choice, QuestionForm
+
 
 """
 def index(request):
@@ -15,11 +16,9 @@ def index(request):
 """
 
 
-
-
 class RexanaMain(generic.ListView):
     template_name = 'LMI_NLP/Rexana.HTML'
-    #template_name = 'LMI_NLP/index.html'
+    # template_name = 'LMI_NLP/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
@@ -29,10 +28,20 @@ class RexanaMain(generic.ListView):
         """
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
 
-    # old one
-    # def get_queryset(self):
-    #     """Return the last five published questions."""
-    #     return Question.objects.order_by('-pub_date')[:5]
+
+# class RexanaSteps(generic.ListView):
+#     template_name = 'LMI_NLP/Steps.HTML'  # add the name
+#
+# class RexanaUs(generic.ListView):
+#     template_name = 'LMI_NLP/Us.HTML'  # add the name
+#
+# class RexanaGo(generic.FormView):
+#     template_name = 'LMI_NLP/Go.HTML'
+
+# old one
+# def get_queryset(self):
+#     """Return the last five published questions."""
+#     return Question.objects.order_by('-pub_date')[:5]
 
 
 # try except written in hand
@@ -98,5 +107,15 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse('LMI_NLP:results', args=(question.id,)))
 
 
-def Execution(request) :
-    return render(request,'LMI_NLP/Execution.html')
+def Execution(request):
+    if request.method == 'POST':
+        form = QuestionForm(request.POST)
+        if form.is_valid():
+            # clean the data
+            # cleaned data in form.cleaned_data
+            #Top3Response = SiteMain(form.cleaned_data["Question"])
+
+            return HttpResponseRedirect('')  # needs a page to add the responses
+    else:
+        form = QuestionForm()
+    return render(request, 'LMI_NLP/Execution.html', {'form': form})
