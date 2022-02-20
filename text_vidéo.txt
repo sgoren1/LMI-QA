@@ -13,7 +13,7 @@ Dis nous Rexana, comment comprends-tu nos questions ? (Voix robotique a la siri)
 
 - > Je l'analyse, ce qui me permet de délimiter les mots et la ponctuation, exemple : "Je / mange / une / pomme.". Ici, je comprends qu'il a
 des espaces entre les mots et que ceux-ci forment une phrase, grâce au point. (superbe animation de découpage de la phrase, mettre en évidence les espaces et une
-fléche vers le point). C'est ce qu'on appel l'analyse syntaxique. 
+fléche vers le point). C'est ce qu'on appelle l'analyse syntaxique. 
  
 -> Ensuite, j'effectue une analyse sémantique : c-à-d faire en sorte de "comprendre" les mots clés. Par exemple : "J'ai perdu mon mot de passe", je comprends que 
 le mot "mot de passe" se rapproche beaucoup des mots "identifiant" ou "utilisateur" par exemple. (Ecrire les mots, faire une petite animation) 
@@ -25,27 +25,43 @@ de texte qui font tout cela en plusieurs langues, et sont accessibles très faci
 
 J'ai lu quelque part que les intelligences artificielles s'entrainent d'elles-mêmes afin de fonctionner correctement, est-ce vrai ? 
 
--> Une intelligence artificielle doit apprendre, comme le fait un humain pour toute chose dans la vie. En résumé, si on medonne beaucoup de texte à analyser, et qu'on
+-> Une intelligence artificielle doit apprendre, comme le fait un humain pour toute chose dans la vie. En résumé, si on me donne beaucoup de texte à analyser, et qu'on
 me corrige à chaque fois que je me trompe, je vais devenir de plus en plus performant, et je fournirai des réponses de plus en plus correctes et précises. 
-C'est ce qu'on appel de l'apprentissage supervisé, [ou en anglais Supervised Learning.]
+C'est ce qu'on appelle de l'apprentissage supervisé, [ou en anglais Supervised Learning] . 
+A la fin de cet apprentissage , on obtient ce qu'on appel un modèle . Le modèle est comme le cerveau d'une IA car toute donnée qu'elle recevera ,
+passera par ce modèle mathématique et le résultat dependra de la performance de ce dernier .
 
 -> Pour ce projet par exemple, j'utilise un modèle entrainé disponible sur internet , il s'appel Piaf et il est très performant. 
 
-Humm, intéressant... Mais au final, comment fais-tu donc pour répondre à la question ? 
+Mais comment connais tu les réponses à nos questions ?  
 
--> Une fois la question analysée et découpée, je peux en soutirer les mots clés (Effet vidéo: je met un texte et je met en évidence des mots en plus grand), comme je 
-l'ai expliqué précedemment, cela va me servir à faire une recherche dans ma base de données. Moi par exemple j'utilise celle inspirée de Wikipédia, pour trouver les meilleures
-pagess en relation avec mes mots clés. Une fois cela fait, je peux combiner ces résultats et employer mon réseau de neurones super entrainé, qui me donnera les résultats. 
+-> Je ne connais pas les réponses initialement , je les recherche . Pour ce projet je me fie à la base de données de Wikipédia.
+Une base de données c'est un ensemble de valeurs et variables tel que le tout représente une information . [Cool animation needed here]
+Une fois la question analysée et découpée, je peux en soutirer les mots clés (Effet vidéo: je met un texte et je met en évidence
+des mots en plus grand), afin de faire une recherche dans ma base de données et cibler les meilleures pages en relation avec la question initiale . 
+Une fois cela fait, je peux déployer ces résultats dans mon réseau de neurones super entrainé, qui me dira si oui ou non , cette page Wikipédia est une réponse à ma question.
+
 
 === RESEAUX DE NEURONNE ===
 
 Hein quoi, un réseau de neurones, comme dans un cerveau humain ? 
 
--> Pas vraiment non , mais ça y ressemble . En réalité les réseaux de neurones sont des structures informatiques dont le concept est inspiré du système nerveux humain . Dans un cerveau , il existe des millions de neurones , qui transmettent de l'information depuis ou vers le reste du corps . En informatique , un  réseau de neurones est composé de couches ( layers en anglais ) : la couche des entrées , et la couche des sorties . Chaque couches peut contenir des centaines voir de milliers de noueuds , qui représentent les neurones . Les noeuds sont ensuite liés entre eux par des arretes , d'où cette forme d'arbre . Plus le problème est complexe , plus le nombre de noeuds et de couches est grand . 
+-> Pas vraiment non , mais ça y ressemble . En réalité les réseaux de neurones sont des structures informatiques dont le concept 
+est inspiré du système nerveux humain . Dans un cerveau , il existe des millions de neurones , qui transmettent de l'information 
+depuis ou vers le reste du corps . En informatique , un  réseau de neurones est composé de couches ( layers en anglais ) : la couche
+des entrées , une couche intermédiaire ou plus ,  et la couche des sorties . Chaque couches peut contenir des centaines voir de milliers de noueuds , 
+qui représentent les neurones . Les noeuds sont ensuite liés entre eux par des arretes , d'où cette forme d'arbre . 
+Plus le problème est complexe , plus le nombre de noeuds et de couches intermédiaires est grand . Cette structure est extremement répandue
+dans le monde de l'intelligence artificielle et de l'apprentissage profond [Deep Learning]
 
-Il faut aussi savoir que pour faire passer l'information d'un noeud vers un autre , on fait appel à une fonction mathématique , qui varie d'un réseau de neurones à un autre . Cette fonction va affecter notre résultat ( couche de sortie ) . Le processus d'apprentissage se fait ici , quand le réseau fait varier cette fonction , pour nous donner un résultat de plus en plus correcte . 
+Il faut aussi savoir que pour faire passer l'information entre les noeuds, on fait appel à une fonction mathématique , [Animation d'une donnée qui passe
+d'un noeud à un autre par une fonction f(x)] qui varie d'un réseau de neurones à un autre . Cette fonction va affecter notre résultat ( couche de sortie ) . 
+Le processus d'apprentissage se fait ici , quand le réseau fait varier cette fonction afin de s'adapter aux entrées et donner 
+des résultats de plus en plus correctes . 
+
 
 
 === OUTRO ===
 
-...
+Voila , c'était notre brève explication du fonctionnement d'une IA , par Rexanna . N'hésitez pas à consulter notre site web "blablabla.com" 
+pour tester par vous meme et avoir plus d'informations sur notre projet ! 
