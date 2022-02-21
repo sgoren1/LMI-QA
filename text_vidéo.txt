@@ -38,6 +38,7 @@ C'est ce qu'on appelle de l'apprentissage supervisé, [ou en anglais Supervised 
 === RESEAUX DE NEURONNE ===
 
 [Personne 3 : ? ] Hein quoi, un réseau de neurones, comme dans un cerveau humain ? 
+(Voix : Soit vraiment étonné dans la voix (en mode "hein quoi sérieusement ? :o" )
 
 -> Pas vraiment non, mais ça y ressemble. En réalité les réseaux de neurones sont des structures informatiques dont le concept est inspiré du système nerveux humain. Dans un cerveau, il existe des millions de neurones, qui transmettent de l'information depuis ou vers le reste du corps. En informatique, un réseau de neurones est composé de couches : la couche des entrées qui reçoit les données, une ou plusieurs couches intermédiaires,  et la couche des sorties qui donne le résultat. Chaque couche peut contenir des centaines voir de milliers de noeuds, qui représentent les neurones. Les noeuds sont liés entre eux d'une couche à l'autre, d'où cette forme d'arbre.
 
@@ -59,5 +60,5 @@ Une fois cela fait, je peux déployer ces résultats dans mon réseau de neurone
 
 === OUTRO ===
 
-[Personne 5 : ? ] Voila , c'était notre brève explication du fonctionnement d'une IA , par Rexanna . N'hésitez pas à consulter notre site web "blablabla.com" 
-pour tester par vous meme et avoir plus d'informations sur notre projet ! 
+[Personne 5 : ? ] Voila , c'était notre brève explication du fonctionnement d'une IA , par Rexanna . N'hésitez pas à consulter notre site web, affiché à l'écran
+pour tester par vous meme et avoir plus d'informations sur notre projet !
