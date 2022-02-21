@@ -24,7 +24,7 @@ urlpatterns = [
     path('', views.RexanaMain.as_view(), name='Rexana'),
     # path('<int:pk>/', views.DetailView.as_view(), name='detail'),
     path('LMI_NLP/results.html', views.ResultsView.as_view(), name='results'),
-    path('LMI_NLP/your-question',views.YourQuestion),
+    path('your-question.html',views.YourQuestion),
     # path('results/', views.ResultsView.as_view(), name='results'),
     # path('<int:question_id>/vote/', views.vote, name='vote'),
 

@@ -46,9 +46,6 @@ class ResultsView(generic.ListView):
     model = Top3Results
     template_name = 'Rexana.html'
 
-class YourQuestion(generic.ListView):
-    template_name = 'your-question.html'
-
 
 """
 def detail(request, question_id):
@@ -95,3 +92,8 @@ def Execution(request):
     else:
         form = QuestionForm()
     return render(request, 'LMI_NLP/Execution.html', {'form': form})
+
+
+def YourQuestion(request):
+    return render(request,'LMI_NLP/your-question.html')
+
