@@ -37,4 +37,11 @@ class Choice(models.Model):
 
 
 class QuestionForm(forms.Form):
-    question = forms.CharField(label='Question',max_length=100)
+    question = forms.CharField(label='Question', max_length=100)
+
+
+class Top3Results(models.Model):
+    def __str__(self):
+        return self.result_text
+
+    result_text = models.CharField(max_length=2000)

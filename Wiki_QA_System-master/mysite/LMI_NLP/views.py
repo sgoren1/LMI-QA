@@ -5,7 +5,8 @@ from django.views import generic
 from django.utils import timezone
 from django.http import Http404
 from django.template import loader
-from .models import Question, Choice, QuestionForm
+from .models import Question, Choice, QuestionForm,Top3Results
+from .src import Application
 
 
 """
@@ -29,32 +30,6 @@ class RexanaMain(generic.ListView):
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
 
 
-# class RexanaSteps(generic.ListView):
-#     template_name = 'LMI_NLP/Steps.HTML'  # add the name
-#
-# class RexanaUs(generic.ListView):
-#     template_name = 'LMI_NLP/Us.HTML'  # add the name
-#
-# class RexanaGo(generic.FormView):
-#     template_name = 'LMI_NLP/Go.HTML'
-
-# old one
-# def get_queryset(self):
-#     """Return the last five published questions."""
-#     return Question.objects.order_by('-pub_date')[:5]
-
-
-# try except written in hand
-# def detail(request, question_id):
-#     try:
-#         question = Question.objects.get(pk=question_id)
-#     except Question.DoesNotExist:
-#         raise Http404("Question does not exist")
-#     return render(request, 'LMI_NLP/detail.html', {'question': question})
-
-# old detail function non used
-# def detail(request, question_id):
-#     return HttpResponse("You're looking at question %s." % question_id)
 
 class DetailView(generic.DetailView):  # detailView expect primary key,so change views question_id to pk
     model = Question
@@ -67,9 +42,12 @@ class DetailView(generic.DetailView):  # detailView expect primary key,so change
         return Question.objects.filter(pub_date__lte=timezone.now())
 
 
-class ResultsView(generic.DetailView):
-    model = Question
-    template_name = 'LMI_NLP/results.html'
+class ResultsView(generic.ListView):
+    model = Top3Results
+    template_name = 'Rexana.html'
+
+class YourQuestion(generic.ListView):
+    template_name = 'your-question.html'
 
 
 """
@@ -111,11 +89,9 @@ def Execution(request):
     if request.method == 'POST':
         form = QuestionForm(request.POST)
         if form.is_valid():
-            # clean the data
             # cleaned data in form.cleaned_data
-            #Top3Response = SiteMain(form.cleaned_data["Question"])
-
-            return HttpResponseRedirect('')  # needs a page to add the responses
+            Top3Response = Application.SiteMain(form.cleaned_data["Question"])
+            return HttpResponseRedirect('/')  # needs a page to add the responses
     else:
         form = QuestionForm()
     return render(request, 'LMI_NLP/Execution.html', {'form': form})
