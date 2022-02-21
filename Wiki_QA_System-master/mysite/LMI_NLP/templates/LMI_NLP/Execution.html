@@ -43,7 +43,7 @@ input[type=text] {
         <form action="" method="post"> <!-- action should be changed -->
             {% csrf_token %}
             <label for="fquestion">Votre question:</label>
-            <input type="text" id="fquestion" name="fquestion" placeholder="Your question.." value="{{ current_question }}">
+            <input type="text" id="fquestion" name="question" placeholder="Your question..">
         <input type="submit" value="OK">
         </form>
     </div>
