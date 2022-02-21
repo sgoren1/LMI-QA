@@ -1,6 +1,6 @@
 === INTRO ===
 
-De nos jours, les programmes intelligents sont très répandus et très présents dans la vie de tous les jours. Une des fonctionnalité les plus utilisées qu'offre l'intelligence artificielle est le système de question/réponse. Le principe est simple : Nous posons une question à un programme, ce dernier l'analyse et le comprend pour enfin essayer d'y répondre.
+[Personne 1 : ? ] De nos jours, les programmes intelligents sont très répandus et très présents dans la vie de tous les jours. Une des fonctionnalité les plus utilisées qu'offre l'intelligence artificielle est le système de question/réponse. Le principe est simple : Nous posons une question à un programme, ce dernier l'analyse et le comprend pour enfin essayer d'y répondre.
 
 Mais comment tout cela fonctionne ? 
 Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son système de question/réponse.
@@ -8,7 +8,7 @@ Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son
 
 === EXPLICATION DES ANALYSES ===
 
-Dis-nous Rexana, comment comprends-tu nos questions ? (Voix robotique à la siri)
+[Personne 1 : ? ] Dis-nous Rexana, comment comprends-tu nos questions ? (Voix robotique à la siri)
 
 - > Je l'analyse, ce qui me permet de délimiter les mots et la ponctuation. Par exemple : "Je / mange / une / pomme.". Ici, j'observe qu'il y a
 des espaces entre les mots et que ceux-ci forment une phrase, grâce au point. (superbe animation de découpage de la phrase, mettre en évidence les espaces et une
@@ -24,7 +24,7 @@ de texte qui font tout cela en plusieurs langues, et sont accessibles très faci
 
 == APPRENTISSAGE DE L'IA ===
 
-J'ai lu quelque part que les intelligences artificielles s'entrainent d'elles-mêmes afin de fonctionner correctement, est-ce vrai ? 
+[Personne 2 : ? ] J'ai lu quelque part que les intelligences artificielles s'entrainent d'elles-mêmes afin de fonctionner correctement, est-ce vrai ? 
 
 -> Une intelligence artificielle doit apprendre, comme le fait un humain. En résumé, si on me donne beaucoup de texte à analyser, et qu'on me corrige à chaque fois que je me trompe, je vais devenir de plus en plus performant, et je fournirai des réponses de plus en plus correctes et précises. 
 C'est ce qu'on appelle de l'apprentissage supervisé, [ou en anglais Supervised Learning]. 
@@ -37,7 +37,7 @@ C'est ce qu'on appelle de l'apprentissage supervisé, [ou en anglais Supervised 
 
 === RESEAUX DE NEURONNE ===
 
-Hein quoi, un réseau de neurones, comme dans un cerveau humain ? 
+[Personne 3 : ? ] Hein quoi, un réseau de neurones, comme dans un cerveau humain ? 
 
 -> Pas vraiment non, mais ça y ressemble. En réalité les réseaux de neurones sont des structures informatiques dont le concept est inspiré du système nerveux humain. Dans un cerveau, il existe des millions de neurones, qui transmettent de l'information depuis ou vers le reste du corps. En informatique, un réseau de neurones est composé de couches : la couche des entrées qui reçoit les données, une ou plusieurs couches intermédiaires,  et la couche des sorties qui donne le résultat. Chaque couche peut contenir des centaines voir de milliers de noeuds, qui représentent les neurones. Les noeuds sont liés entre eux d'une couche à l'autre, d'où cette forme d'arbre.
 
@@ -48,9 +48,9 @@ En ce moment, une structure composée d'énormément de neurones et d'un grand n
 
 === QA Principe ===
 
-Mais comment connais-tu les réponses à nos questions ?  
+[Personne 4 : ? ] Mais comment connais-tu les réponses à nos questions ?  
 
--> Je ne connais pas les réponses initialement, je les recherche. Pour ce projet, je me fie à la base de données de Wikipédia.
+-> Je ne connais pas les réponses initialement, je les recherche en explorant les informations que j'ai. Pour ce projet, je me fie à la base de données de Wikipédia.
 Une base de données c'est un ensemble de valeurs et variables tel que le tout représente une information. [Cool animation needed here]
 Grâce à l'analyse syntaxique et sémantique, je peux identifier les mots clés (Effet vidéo: je mets un texte et je mets en évidence
 des mots en plus grand), afin de faire une recherche dans ma base de données et cibler les meilleures pages en relation avec la question. 
@@ -59,5 +59,5 @@ Une fois cela fait, je peux déployer ces résultats dans mon réseau de neurone
 
 === OUTRO ===
 
-Voila , c'était notre brève explication du fonctionnement d'une IA , par Rexanna . N'hésitez pas à consulter notre site web "blablabla.com" 
+[Personne 5 : ? ] Voila , c'était notre brève explication du fonctionnement d'une IA , par Rexanna . N'hésitez pas à consulter notre site web "blablabla.com" 
 pour tester par vous meme et avoir plus d'informations sur notre projet ! 
