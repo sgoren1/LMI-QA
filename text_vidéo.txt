@@ -8,7 +8,7 @@ Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son
 
 === EXPLICATION DES ANALYSES ===
 
-[Personne 1 : ? ] Dis-nous Rexana, comment comprends-tu nos questions ? (Voix robotique à la siri)
+[Personne 1 : ? ] Dis-nous Rexana, comment comprends-tu nos questions ? 
 
 - > Je l'analyse, ce qui me permet de délimiter les mots et la ponctuation. Par exemple : "Je / mange / une / pomme.". Ici, j'observe qu'il y a
 des espaces entre les mots et que ceux-ci forment une phrase, grâce au point. (superbe animation de découpage de la phrase, mettre en évidence les espaces et une
