@@ -37,7 +37,11 @@ class Choice(models.Model):
 
 
 class QuestionForm(forms.Form):
-    question = forms.CharField(label='Question', max_length=100)
+    question = forms.CharField(label='Votre question', max_length=100)
+
+    def clean_question(self):
+        question = self.cleaned_data['question']
+        return question
 
 
 class Top3Results(models.Model):

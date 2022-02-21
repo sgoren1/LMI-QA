@@ -7,7 +7,8 @@ from django.http import Http404
 from django.template import loader
 from .models import Question, Choice, QuestionForm,Top3Results
 from .src import Application
-
+import sys
+import logging
 
 """
 def index(request):
@@ -83,17 +84,26 @@ def vote(request, question_id):
 
 
 def Execution(request):
+    logger = logging.getLogger("mylogger")
     if request.method == 'POST':
+        logger.info("a post")
         form = QuestionForm(request.POST)
+        logger.info(form.errors)
         if form.is_valid():
+            logger.info("post is valid")
+            logger.info(form.cleaned_data["Question"])
             # cleaned data in form.cleaned_data
             Top3Response = Application.SiteMain(form.cleaned_data["Question"])
             return HttpResponseRedirect('/')  # needs a page to add the responses
+        logger.info("post isnt valid")
     else:
+        logger.info("not a post")
         form = QuestionForm()
     return render(request, 'LMI_NLP/Execution.html', {'form': form})
 
 
 def YourQuestion(request):
+    logger = logging.getLogger("mylogger")
+    logger.info("Whatever to log2")
     return render(request,'LMI_NLP/your-question.html')
 
