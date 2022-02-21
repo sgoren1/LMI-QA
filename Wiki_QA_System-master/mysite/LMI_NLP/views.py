@@ -88,12 +88,12 @@ def Execution(request):
     if request.method == 'POST':
         logger.info("a post")
         form = QuestionForm(request.POST)
-        logger.info(form.errors)
+        logger.info(form)
         if form.is_valid():
             logger.info("post is valid")
-            logger.info(form.cleaned_data["Question"])
+            logger.info(form.cleaned_data["question"])
             # cleaned data in form.cleaned_data
-            Top3Response = Application.SiteMain(form.cleaned_data["Question"])
+            Top3Response = Application.SiteMain(form.cleaned_data["question"])
             return HttpResponseRedirect('/')  # needs a page to add the responses
         logger.info("post isnt valid")
     else:
