@@ -40,7 +40,8 @@ input[type=text] {
     </div>
 
     <div class="form">
-        <form action="LMI_NLP/your-question/" method="post"> <!-- action should be changed -->
+        <form action="your-question.html" method="post"> <!-- action should be changed -->
+            {% csrf_token %}
             <label for="fquestion"></label>
             <input type="text" id="fquestion" name="fquestion" placeholder="Your question.." value="{{ current_question }}">
         <input type="submit" value="OK">
