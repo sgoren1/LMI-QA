@@ -50,9 +50,9 @@ input[type=text] {
 
 
     <ul>
-    {% for i in top3contexts %}
-        <li><a href="{% url 'LMI_NLP:Execution' %}">{{ i.result_text }}</a></li>
-    {% endfor %}
+        <li><{{ q.result_text1 }}</a></li>
+        <li>{{ q.result_text2 }}</a></li>
+        <li>{{ q.result_text3 }}</a></li>
     </ul>
 
 </body>
