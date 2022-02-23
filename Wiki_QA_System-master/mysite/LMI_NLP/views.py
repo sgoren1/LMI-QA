@@ -45,7 +45,7 @@ class DetailView(generic.DetailView):  # detailView expect primary key,so change
 
 class ResultsView(generic.ListView):
     model = Top3Results
-    template_name = 'Rexana.html'
+    template_name = 'Execution.html'
 
 
 """
@@ -84,20 +84,17 @@ def vote(request, question_id):
 
 
 def Execution(request):
-
     if request.method == 'POST':
         form = QuestionForm(request.POST)
         if form.is_valid():
-
-
-
             # cleaned data in form.cleaned_data
             top3contexts, top3predictions = Application.SiteMain(form.cleaned_data["question"])
-            respTop3Res = get_object_or_404(Top3Results)
-            respTop3Res.save()
+            q = Top3Results(top3contexts[0],top3contexts[1],top3contexts[2])
+            l = Top3Predition(top3predictions[0],top3predictions[1],top3predictions[2])
 
-            respTop3Pre = get_object_or_404(Top3Predition)
-            respTop3Pre.save()
+            q.save()
+
+            l.save()
             return HttpResponseRedirect('/LMI_NLP/')  # needs a page to add the responses
     else:
         form = QuestionForm()
