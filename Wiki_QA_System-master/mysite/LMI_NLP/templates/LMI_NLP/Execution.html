@@ -48,5 +48,12 @@ input[type=text] {
         </form>
     </div>
 
+
+    <ul>
+    {% for i in top3contexts %}
+        <li><a href="{% url 'LMI_NLP:Execution' %}">{{ i.result_text }}</a></li>
+    {% endfor %}
+    </ul>
+
 </body>
 </html>
