@@ -49,3 +49,9 @@ class Top3Results(models.Model):
         return self.result_text
 
     result_text = models.CharField(max_length=2000)
+
+class Top3Predition(models.Model) :
+    def __str__(self):
+        return self.result_texte
+
+    result_texte = models.CharField(max_length=2000)
