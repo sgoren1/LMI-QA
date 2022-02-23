@@ -36,4 +36,7 @@ class MLModel:
         return Df.sort_values(by=['Score'], ascending=False).iloc[:top_n, ]
 
     def GetContext(self, Df):
-        return Df['Context']
+        return Df['Context'].tolist()
+
+    def GetPrediction(self, Df):
+        return Df['Prediction'].tolist()

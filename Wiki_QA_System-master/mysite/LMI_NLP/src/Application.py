@@ -21,9 +21,7 @@ def SiteMain(question):
     doc_retrive_obj = DocumentRetrival(nlp)
 
     # call UserInput func to get query input
-    print("hello0")
     query = doc_retrive_obj.UserInput(question)
-    print("hello?")
 
     # call preprocess func to preprocess query if required
     doc_retrive_obj.PreprocessUserInput()
@@ -82,10 +80,11 @@ def SiteMain(question):
 
     # get the context, sent to the site...
     context = ML_Model_obj.GetContext(Results)
+    prediction = ML_Model_obj.GetPrediction(Results)
 
     Results.to_csv("Final_results.csv")
 
-    return context
+    return context , prediction
 
 if __name__ == "__main__":
     # load  spacy english language module(large)
