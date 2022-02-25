@@ -1,2 +1,3 @@
-Lien pour télécharger la bêta de la vidéo (expire le 27) :
-https://we.tl/t-SWL9hnmGvT
+Nouvelle bêta disponible, il y a de petites imperfections qui seront corrigé (un ou deux petits drop d'FPS lors d'une transition, voix du début pas assez forte, un ou deux textes affiché pas pertinant et peut déboussoler celui qui regarde la vidéo (lire et écouter en même tmeps pas torp une bonne idée), certaines "pauses" sont un petit peu trop longue).
+
+Lien pour téléchager la vidéo : https://www.transfernow.net/dl/20220225JnNKAUfZ (expire dans 7 jours)
