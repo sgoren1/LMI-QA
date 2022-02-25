@@ -61,4 +61,4 @@ Une fois cela fait, je peux déployer ces résultats dans mon réseau de neurone
 === OUTRO ===
 
 [Personne 5 : ? ] Voila , c'était notre brève explication du fonctionnement d'une IA , par Rexanna . N'hésitez pas à consulter notre site web, affiché à l'écran
-pour tester par vous meme et avoir plus d'informations sur notre projet !
+pour tester par vous meme et avoir plus d'informations sur notre projet ! A beintôt !
