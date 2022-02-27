@@ -1,0 +1,137 @@
+ {% load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" type="text/css" href="{% static 'LMI_NLP/style.css' %}">
+
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexana</title>
+    
+</head>
+
+<body>
+
+                <div class="navbar" id="homepage">
+                        <h2 class="logo">Rexana</h2>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#homepage">Accueil</a></li>
+                            <li><a href="#steps">Fonctionnement</a></li>
+                            <li><a href="#us">Qui sommes-nous ?</a></li>
+                            <li><a href="Execution.html">Posez votre question</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            
+
+
+                <div class = "H1" > 
+                    <section id = "homepage">
+                        <h1>Une <span style="color : #1563A5">intelligence</span> qui <span style="color : #9D7FC6;">explorera</span> les
+                            <span style="color : #9D7FC6;">connaissances</span>  du monde pour <span style="color : #9D7FC6;">vous</span></h1> 
+                        <div class = "CH1">
+                                Rexana est une intelligence artificielle
+                                qui saura repondre a vos questions,
+                                en faisant, comme toutes personne humaine ferait
+                                quand elle a une question: chercher dans Wikipedia
+                        </div>
+                    </section>
+                </div>
+                  
+                <div class="rex">
+                   {% load static %}  <img src="{% static "LMI_NLP/images/rex.svg"%}" alt=""/>
+                </div>
+
+          
+
+
+         <div class="titre" id="steps">Fonctionnement</div>
+        <div class="sousT">L’intelligence Artificielle, c’est quoi?</div>       
+        <div class="content1">
+            L’intelligence artificielle (IA) désigne, de manière générale, le comportement comparable à celui d’un être humain, 
+            présenté par une machine ou un système. Dans la forme la plus élémentaire de l’IA, les ordinateurs sont programmés pour 
+            « imiter » le comportement humain, en exploitant des quantités massives de données issues d’exemples antérieurs de 
+            comportements similaires. Cela peut aller de la reconnaissance des différences entre un chat et un oiseau à 
+            l’exécution d’activités complexes dans une usine de fabrication.
+
+        </div> 
+
+        <div class="sousT2">Rexana c'est qui ?</div>       
+        <div class="content2">
+            Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit.Pellentesque dui dolor, lacinia at
+             felis vel, luctus laoreet eros. Phasellus in
+            tempus sapien. Morbi sit amet ligula nec odio
+
+        </div> 
+
+        <div class="sousT3">Etape 1</div>       
+        <div class="content3">
+            Analyse syntaxique de la phrase : en délimitant les mots et la ponctuation; Rexana comprend qu'il y a
+            des espaces entre les mots et que ces derniers forment une phrase, grâce au point. 
+            Exemple : "Je / mange / une / pomme.".
+
+        </div> 
+
+        <div class="S1">
+            {% load static %}<img src="{% static "LMI_NLP/images/book.svg"%}" alt=""/>
+
+        </div>
+
+        <div class="sousT4">Etape 2</div>       
+        <div class="content4">
+            Analyse sémantique : determination et comprehension des mots cles. 
+            Exemple : "J'ai perdu mon mot de passe", Rexana comprend que 
+             "mot de passe" se rapproche beaucoup des mots "identifiant" ou "utilisateur".
+
+        </div> 
+
+        <div class="sousT5">Etape 3</div>       
+        <div class="content5">
+            determination du theme : grace a l'Analyse semantique et syntaxique, il est en effet possible de trouver le theme qu'englobe la question, qu'on explorera par la suite pour trouver la reponse
+                a la question
+
+            <div class="S3">
+                          {% load static %}   <img src="{% static "LMI_NLP/images/theme.svg"%}" alt=""/>
+
+            </div>
+
+        </div> 
+
+        <div class="sousT6">Etape 4</div>       
+        <div class="content6">
+            Ciblage de la reponse : apres avoir trouver la reponse adequate, Rexana nous la transmet en indiquant egalement le lien Wikipedia dans lequel elle a pioche la reponse
+            
+            <div class="S4">
+                {% load static %}<img src="{% static "LMI_NLP/images/answer.svg"%}" alt=""/>
+
+            </div>
+        </div> 
+
+        <div class="us" id="us">
+                Qui sommes-nous?
+            </div> 
+        
+            <div class="WI">    {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="YI">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="ZS">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="IS">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="HO">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="SR">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="SA">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="MA">   {% load static %}<img src="{% static "LMI_NLP/images/wac.svg"%}" alt=""/> </div>
+            <div class="charlotte">   {% load static %}<img src="{% static "LMI_NLP/images/char.svg"%}" alt=""/> </div>
+
+        <footer>
+        </footer> 
+
+</body>
+</html>

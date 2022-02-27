@@ -5,7 +5,7 @@ from django.views import generic
 from django.utils import timezone
 from django.http import Http404
 from django.template import loader
-from .models import Question, Choice, QuestionForm,Top3Results
+from .models import Question, Choice, QuestionForm, Top3Results, Top3Predition
 from .src import Application
 import sys
 import logging
@@ -19,7 +19,7 @@ def index(request):
 
 
 class RexanaMain(generic.ListView):
-    template_name = 'LMI_NLP/Rexana.HTML'
+    template_name = 'Rexana.html'
     # template_name = 'LMI_NLP/index.html'
     context_object_name = 'latest_question_list'
 
@@ -29,7 +29,6 @@ class RexanaMain(generic.ListView):
         published in the future).
         """
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
-
 
 
 class DetailView(generic.DetailView):  # detailView expect primary key,so change views question_id to pk
@@ -45,7 +44,7 @@ class DetailView(generic.DetailView):  # detailView expect primary key,so change
 
 class ResultsView(generic.ListView):
     model = Top3Results
-    template_name = 'Rexana.html'
+    template_name = 'Execution.html'
 
 
 """
@@ -89,12 +88,22 @@ def Execution(request):
         if form.is_valid():
             # cleaned data in form.cleaned_data
             top3contexts, top3predictions = Application.SiteMain(form.cleaned_data["question"])
-            return HttpResponseRedirect('/LMI_NLP/')  # needs a page to add the responses
+            q = Top3Results(result_text1=top3contexts[0], result_text2=top3contexts[1], result_text3=top3contexts[2])
+            l = Top3Predition(result_texte1=top3predictions[0], result_texte2=top3predictions[1],
+                              result_texte3=top3predictions[2])
+
+            q.save()
+
+            l.save()
+            return render(request, 'LMI_NLP/Execution.html', {'q': q , 'l':l})
+            # return HttpResponseRedirect('/LMI_NLP/Execution.html')  # needs a page to add the responses
     else:
         form = QuestionForm()
     return render(request, 'LMI_NLP/Execution.html', {'form': form})
 
 
 def YourQuestion(request):
-    return render(request,'LMI_NLP/your-question.html')
+    return render(request, 'LMI_NLP/your-question.html')
 
+def Rexana(request):
+    return render(request,'LMI_NLP/Rexana.html')
