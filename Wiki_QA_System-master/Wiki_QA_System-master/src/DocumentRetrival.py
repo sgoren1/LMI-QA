@@ -32,7 +32,7 @@ class DocumentRetrival:
         self.search_text = self.question
         return self.search_text
 
-    def UserInput(self, question):
+    def UserInputQuestion(self, question):
         '''
         This Function is to get user query for document retrival from the site
         '''

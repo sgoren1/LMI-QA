@@ -1,7 +1,7 @@
 import spacy
 import pandas as pd
-import spacy_universal_sentence_encoder
 import tensorflow_text
+import spacy_universal_sentence_encoder
 from ContextExtraction import ContextExtraction
 from DocumentRetrival import DocumentRetrival
 from DataWrangling import DataWrangler
@@ -21,7 +21,7 @@ def SiteMain(question):
     doc_retrive_obj = DocumentRetrival(nlp)
 
     # call UserInput func to get query input
-    query = doc_retrive_obj.UserInput(question)
+    query = doc_retrive_obj.UserInputQuestion(question)
 
     # call preprocess func to preprocess query if required
     doc_retrive_obj.PreprocessUserInput()
