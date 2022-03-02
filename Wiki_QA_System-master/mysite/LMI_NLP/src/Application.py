@@ -1,0 +1,161 @@
+import spacy
+import pandas as pd
+import spacy_universal_sentence_encoder
+import tensorflow_text
+from .ContextExtraction import ContextExtraction
+from .DocumentRetrival import DocumentRetrival
+from .DataWrangling import DataWrangler
+from .ContextSimilarity import ContextSimilarity
+from .MLModel import MLModel
+
+def SiteMain(question):
+    # load  spacy english language module(large)
+    # nlp = spacy.load('en_core_web_lg')
+    nlp = spacy.load('fr_core_news_lg')
+
+    # Load Universal Sentence Encoder and later find context similarity for ranking paragraphs
+    # old was en_use_lg (can be change with en_use_md,en_use_lg,xx_use_md,xx_use_lg (xx -> multilanguages))
+    use_nlp = spacy_universal_sentence_encoder.load_model('xx_use_lg')
+
+    # create a Document retrival object
+    doc_retrive_obj = DocumentRetrival(nlp)
+
+    # call UserInput func to get query input
+    query = doc_retrive_obj.UserInput(question)
+
+    # call preprocess func to preprocess query if required
+    doc_retrive_obj.PreprocessUserInput()
+
+    # call Retrive func with required top_n docs for retrival from Wiki
+    pages = doc_retrive_obj.Retrive(2)
+
+    # create a Extraction retrival object
+    context_extract_obj = ContextExtraction(nlp)
+
+    # Create a spacy matcher for the user query to parse the pages
+    context_extract_obj.AddPhraseMatcher(query)
+
+    # extract necessary context
+    context_extract_obj.RetriveMatch(pages)
+
+    # convert to pandas df
+    text = context_extract_obj.StoreFindingAsDf()
+
+    # store_results in csv for further reference
+    text.to_csv("Matching_Wiki_contexts.csv")
+
+    # create a Data Wrangler object
+    data_wrangler_obj = DataWrangler(nlp)
+
+    # cleaned Dataframe
+    cleaned_df = data_wrangler_obj.DataWranglerDf(text)
+
+    # store_results in csv for further reference
+    cleaned_df.to_csv("Cleaned_Wiki_contexts.csv")
+
+    # create a Context Similarity object
+    context_similarity_obj = ContextSimilarity(use_nlp)
+
+    # find the Similarites of Different context
+    con_list = context_similarity_obj.ContextSimilarity(query, cleaned_df['Wikipedia_Paragraphs'])
+
+    context_similarity_df = context_similarity_obj.ConvertToDf(con_list)
+
+    Merged_Df = context_similarity_obj.MergeDf(context_similarity_df, cleaned_df)
+
+    # retreive top N rows from dataframe
+    TopNDf = context_similarity_obj.TopNSimilarityDf(Merged_Df)
+
+    # create a ML Model object
+    ML_Model_obj = MLModel()
+
+    # call the Roberta model
+    fquad_finding = ML_Model_obj.FquadModel(TopNDf, query)
+
+    # final Df post model prediction
+    Final_DF = ML_Model_obj.ConverttoDf()
+
+    # filtering only top N out of it.
+    Results = ML_Model_obj.TopNDf(Final_DF)
+
+    # get the context, sent to the site...
+    context = ML_Model_obj.GetContext(Results)
+    prediction = ML_Model_obj.GetPrediction(Results)
+
+    Results.to_csv("Final_results.csv")
+
+    return context , prediction
+
+if __name__ == "__main__":
+    # load  spacy english language module(large)
+    # nlp = spacy.load('en_core_web_lg')
+    nlp = spacy.load('fr_core_news_lg')
+
+    # Load Universal Sentence Encoder and later find context similarity for ranking paragraphs
+    # old was en_use_lg (can be change with en_use_md,en_use_lg,xx_use_md,xx_use_lg (xx -> multilanguages))
+    use_nlp = spacy_universal_sentence_encoder.load_model('xx_use_lg')
+
+    # create a Document retrival object
+    doc_retrive_obj = DocumentRetrival(nlp)
+
+    # call UserInput func to get query input
+    query = doc_retrive_obj.UserInput()  # need to change this function with doc_retrieve_obj.UserInputJson()?
+
+    # call preprocess func to preprocess query if required
+    doc_retrive_obj.PreprocessUserInput()
+
+    # call Retrive func with required top_n docs for retrival from Wiki
+    pages = doc_retrive_obj.Retrive(2)
+
+    # create a Extraction retrival object
+    context_extract_obj = ContextExtraction(nlp)
+
+    # Create a spacy matcher for the user query to parse the pages
+    context_extract_obj.AddPhraseMatcher(query)
+
+    # extract necessary context
+    context_extract_obj.RetriveMatch(pages)
+
+    # convert to pandas df
+    text = context_extract_obj.StoreFindingAsDf()
+
+    # store_results in csv for further reference
+    text.to_csv("Matching_Wiki_contexts.csv")
+
+    # create a Data Wrangler object
+    data_wrangler_obj = DataWrangler(nlp)
+
+    # cleaned Dataframe
+    cleaned_df = data_wrangler_obj.DataWranglerDf(text)
+
+    # store_results in csv for further reference
+    cleaned_df.to_csv("Cleaned_Wiki_contexts.csv")
+
+    # create a Context Similarity object
+    context_similarity_obj = ContextSimilarity(use_nlp)
+
+    # find the Similarites of Different context
+    con_list = context_similarity_obj.ContextSimilarity(query, cleaned_df['Wikipedia_Paragraphs'])
+
+    context_similarity_df = context_similarity_obj.ConvertToDf(con_list)
+
+    Merged_Df = context_similarity_obj.MergeDf(context_similarity_df, cleaned_df)
+
+    # retreive top N rows from dataframe
+    TopNDf = context_similarity_obj.TopNSimilarityDf(Merged_Df)
+
+    # create a ML Model object
+    ML_Model_obj = MLModel()
+
+    # call the Roberta model
+    fquad_finding = ML_Model_obj.FquadModel(TopNDf, query)
+
+    # final Df post model prediction
+    Final_DF = ML_Model_obj.ConverttoDf()
+
+    # filtering only top N out of it.
+    Results = ML_Model_obj.TopNDf(Final_DF)
+    # get the context, sent to the site...
+    # context = ML_Model_obj.GetContext(Results)
+    #
+    Results.to_csv("Final_results.csv")

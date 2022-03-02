@@ -1,0 +1,64 @@
+ {% load static%}
+ <link rel="stylesheet" href="{% static 'LMI_NLP/exec.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+    border-radius: 4px;
+  outline: none;
+    background-color: #9D7FC6;
+}
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posez votre question</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <h2 class="logo">Rexana</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="homepage">Accueil</a></li>
+                <li><a href="us">Qui sommes-nous ?</a></li>
+                <li><a href="steps">Fonctionnement</a></li>
+                <li><a href="Go">posez votre question</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="form">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="fquestion">Votre question:</label>
+            <input type="text" id="fquestion" name="question" placeholder="Your question..">
+        <input type="submit" value="OK">
+        </form>
+    </div>
+
+    <div class="result">
+        <ul>
+            <li><{{ q.result_text1 }}</li>
+        </ul>
+        <ul>
+            <li>{{ q.result_text2 }}</li>
+        </ul>
+        <ul>
+            <li>{{ q.result_text3 }}</li>
+        </ul>
+    </div>
+
+</body>
+</html>
