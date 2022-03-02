@@ -19,7 +19,7 @@ def index(request):
 
 
 class RexanaMain(generic.ListView):
-    template_name = 'LMI_NLP/Rexana.HTML'
+    template_name = 'Rexana.html'
     # template_name = 'LMI_NLP/index.html'
     context_object_name = 'latest_question_list'
 
@@ -95,7 +95,7 @@ def Execution(request):
             q.save()
 
             l.save()
-            return render(request, 'LMI_NLP/Execution.html', {'q': q})
+            return render(request, 'LMI_NLP/Execution.html', {'q': q , 'l':l})
             # return HttpResponseRedirect('/LMI_NLP/Execution.html')  # needs a page to add the responses
     else:
         form = QuestionForm()
@@ -104,3 +104,6 @@ def Execution(request):
 
 def YourQuestion(request):
     return render(request, 'LMI_NLP/your-question.html')
+
+def Rexana(request):
+    return render(request,'LMI_NLP/Rexana.html')

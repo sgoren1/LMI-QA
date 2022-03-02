@@ -1,5 +1,10 @@
  {% load static%}
- <link rel="stylesheet" href="{% static 'LMI_NLP/exec.css' %}">
+
+<head>
+	<link rel="stylesheet" href="{% static 'LMI_NLP/exec.css' %}">
+	<title>OK</title>
+	<meta name="viewport" content="width=device-width">
+</head>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +13,7 @@
 
 input[type=text] {
   width: 100%;
+	height : 120px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -17,8 +23,23 @@ input[type=text] {
     background-color: #9D7FC6;
 }
 
+input[type=submit] {
+      background-color: #FFFFFF;
+	height : 50px;
+	padding: 12px 20px;
+  margin: 8px 0;
+	  box-sizing: border-box;
+  border: 1px solid #555;
+    border-radius: 4px;
+	  outline: none;
+
+
+}
+
+
 
 </style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,34 +52,112 @@ input[type=text] {
         <h2 class="logo">Rexana</h2>
         <div class="menu">
             <ul>
-                <li><a href="homepage">Accueil</a></li>
-                <li><a href="us">Qui sommes-nous ?</a></li>
-                <li><a href="steps">Fonctionnement</a></li>
-                <li><a href="Go">posez votre question</a></li>
+                <li><a href="Rexana.html">Accueil</a></li>
             </ul>
         </div>
     </div>
 
     <div class="form">
-        <form action="" method="post">
+        <form action="" method="post"> <!-- action should be changed -->
             {% csrf_token %}
-            <label for="fquestion">Votre question:</label>
+            <label for="fquestion"></label>
             <input type="text" id="fquestion" name="question" placeholder="Your question..">
-        <input type="submit" value="OK">
+        <input type="submit" value="SUBMIT">
         </form>
     </div>
 
-    <div class="result">
-        <ul>
-            <li><{{ q.result_text1 }}</li>
-        </ul>
-        <ul>
-            <li>{{ q.result_text2 }}</li>
-        </ul>
-        <ul>
-            <li>{{ q.result_text3 }}</li>
-        </ul>
-    </div>
 
-</body>
-</html>
+<div class="page">
+	<div class="page__section">
+		<span class="page__name-effect">#TOP 3 RESULTATS | PREDICTIONS </span>
+		<div class="page__group">
+			<article class="news">
+				<header class="news__header">
+					<h3 class="r-title news__title">
+						<a href="#0" class="r-link animated-underline animated-underline_type2 news__link">
+							RESULTAT : 1
+						</a>
+					</h3>
+				</header>
+				<div class="news__content">
+					<p>
+						{{q.result_text1}}
+					</p>
+				</div>
+
+				<header class="news__header">
+					<h3 class="r-title news__title">
+						<a href="#0" class="r-link animated-underline animated-underline_type2 news__link">
+							PREDICTION :
+						</a>
+					</h3>
+				</header>
+				<div class="news__content">
+					<p>
+						{{l.result_texte1}}
+					</p>
+				</div>
+
+
+			</article>
+			<article class="news">
+				<header class="news__header">
+
+					<h3 class="r-title news__title">
+						<a href="#0" class="r-link animated-underline animated-underline_type2 news__link">
+							RESULTAT : 2
+						</a>
+					</h3>
+				</header>
+				<div class="news__content">
+					<p>
+						{{q.result_text2}}			</p>
+				</div>
+
+								<header class="news__header">
+					<h3 class="r-title news__title">
+						<a href="#0" class="r-link animated-underline animated-underline_type2 news__link">
+							PREDICTION :
+						</a>
+					</h3>
+				</header>
+				<div class="news__content">
+					<p>
+						{{l.result_texte2}}
+					</p>
+				</div>
+			</article>
+			
+						<article class="news">
+				<header class="news__header">
+
+					<h3 class="r-title news__title">
+						<a href="#0" class="r-link animated-underline animated-underline_type2 news__link">
+							RESULTAT : 3
+						</a>
+					</h3>
+				</header>
+				<div class="news__content">
+					<p>
+						{{q.result_text3}}			</p>
+				</div>
+											<header class="news__header">
+					<h3 class="r-title news__title">
+						<a href="#0" class="r-link animated-underline animated-underline_type2 news__link">
+							PREDICTION :
+						</a>
+					</h3>
+				</header>
+				<div class="news__content">
+					<p>
+						{{l.result_texte3}}
+					</p>
+				</div>
+
+			</article>
+		</div>
+	</div>
+	
+
+</div>
+
