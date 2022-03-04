@@ -22,12 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ag6xn!vp!7&b^1xd+o93(r+*utv_=xwo(lzzn-m982lvo0$4x6'
+with open('/etc/secret_key_django.txt') as f:
+    SECRET_KEY = f.read().strip()
+#SECRET_KEY = 'django-insecure-ag6xn!vp!7&b^1xd+o93(r+*utv_=xwo(lzzn-m982lvo0$4x6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['206.189.119.153']
 
 
 # Application definition
@@ -121,8 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
-STATIC_ROOT = os.path.join(BASE_DIR,'assets')
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'/LMI_NLP/static')]
+STATIC_ROOT = '/home/LMI_NLP/Wiki_QA_System-master/mysite/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
