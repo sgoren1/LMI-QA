@@ -1,3 +1,10 @@
-Nouvelle bêta disponible, il y a de petites imperfections qui seront corrigé (un ou deux petits drop d'FPS lors d'une transition, voix du début pas assez forte, un ou deux textes affiché pas pertinant et peut déboussoler celui qui regarde la vidéo (lire et écouter en même tmeps pas torp une bonne idée), certaines "pauses" sont un petit peu trop longue).
+Voici une nouvelle version, toujours pas fini encore mais nous en sommes pas loin. Les points qu'il faut encore améliorer sont :
+-> Il y a un mini bug d'affichage de quelques milli-secondes sur la barre de son à un moment, et un mini bug audio de quelques milli-secondes aussi, je vais corriger ça.
+-> La transition style TV ne me plait finalement pas, je vais opter pour une transition classique comme sur toute la vidéo, histoire d'être cohérent (même chose partout)
+-> La musique est trop forte
+-> On va sûrement changer la voix de l'IA
+-> Il manque encore la mini intro pour le printemps des sciences
+-> Je dois rajouter les crédit pour la musique à la fin, sinon pour le reste ce n'est pas nécéssaire
+-> Je dois encore changer le nom de notre site à la fin
 
-Lien pour téléchager la vidéo : https://www.transfernow.net/dl/20220225JnNKAUfZ (expire dans 7 jours)
+LE LIEN : https://we.tl/t-CAHaEtJYK9
