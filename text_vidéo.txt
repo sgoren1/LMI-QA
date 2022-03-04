@@ -45,17 +45,16 @@ C'est ce qu'on appelle de l'apprentissage supervisé, [ou en anglais Supervised 
 Pour faire passer l'information entre les couches, les neurones appliquent une fonction mathématique aux données qu'ils reçoivent [Animation d'une donnée qui passe d'un noeud à un autre par une fonction f(x)]. Cette fonction peut varier d'un réseau de neurones à un autre et peut affecter le résultat ( couche de sortie ). 
 Le processus d'apprentissage se fait ici , quand le réseau fait varier cette fonction afin de s'adapter aux entrées et donner  des résultats de plus en plus correctes.
 
-En ce moment, une structure composée d'énormément de neurones et d'un grand nombre de couches est extrêmement répandue dans le monde de l'intelligence artificielle  et est capable de résoudre de nombreux problèmes complexes.
+/// En ce moment, une structure composée d'énormément de neurones et d'un grand nombre de couches est extrêmement répandue dans le monde de l'intelligence artificielle  et est capable de résoudre de nombreux problèmes complexes. ///
 
 === QA Principe ===
 
 [Personne 4 : ? ] Mais comment connais-tu les réponses à nos questions ?  
 
 -> Je ne connais pas les réponses initialement, je les recherche en explorant les informations que j'ai. Pour ce projet, je me fie à la base de données de Wikipédia.
-Une base de données c'est un ensemble de valeurs et variables tel que le tout représente une information. [Cool animation needed here]
-Grâce à l'analyse syntaxique et sémantique, je peux identifier les mots clés (Effet vidéo: je mets un texte et je mets en évidence
-des mots en plus grand), afin de faire une recherche dans ma base de données et cibler les meilleures pages en relation avec la question. 
-Une fois cela fait, je peux déployer ces résultats dans mon réseau de neurones super entrainé, qui me dira si oui ou non, cette page Wikipédia est une réponse à ma question.
+Une base de données c'est un ensemble /// de valeurs et variables tel que le tout représente une /// d'information. [Cool animation needed here]
+Les analyses syntaxiques et sémantiques m'aident à faire une recherche dans ma base de données et cibler les meilleures pages selon la question. 
+Une fois fini, je peux déployer ces résultats dans mon réseau de neurones super entrainé, qui me dira si oui ou non, cette page Wikipédia est une réponse à ma question.
 
 
 === OUTRO ===
