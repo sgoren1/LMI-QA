@@ -95,6 +95,18 @@ ul li a:hover{
     border-radius: 60px;
 }
 
+.result{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 931px;
+    height: 100px;
+
+    top: 700px;
+    bottom: 2000px;
+    border-radius: 60px;
+}
+
 
 
 

@@ -46,6 +46,16 @@ class QuestionForm(forms.Form):
 
 class Top3Results(models.Model):
     def __str__(self):
-        return self.result_text
+        return self.result_text1,self.result_text2,self.result_text3
 
-    result_text = models.CharField(max_length=2000)
+    result_text1 = models.CharField(max_length=2000)
+    result_text2 = models.CharField(max_length=2000)
+    result_text3 = models.CharField(max_length=2000)
+
+class Top3Predition(models.Model) :
+    def __str__(self):
+        return self.result_texte1,self.result_texte2,self.result_texte3
+
+    result_texte1 = models.CharField(max_length=2000)
+    result_texte2 = models.CharField(max_length=2000)
+    result_texte3 = models.CharField(max_length=2000)
