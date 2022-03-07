@@ -1,10 +1,12 @@
-Voici une nouvelle version, toujours pas fini encore mais nous en sommes pas loin. Les points qu'il faut encore améliorer sont :
--> Il y a un mini bug d'affichage de quelques milli-secondes sur la barre de son à un moment, et un mini bug audio de quelques milli-secondes aussi, je vais corriger ça.
--> La transition style TV ne me plait finalement pas, je vais opter pour une transition classique comme sur toute la vidéo, histoire d'être cohérent (même chose partout)
--> La musique est trop forte
--> On va sûrement changer la voix de l'IA
--> Il manque encore la mini intro pour le printemps des sciences
--> Je dois rajouter les crédit pour la musique à la fin, sinon pour le reste ce n'est pas nécéssaire
--> Je dois encore changer le nom de notre site à la fin
+Nouvelle version, pratiquement terminé, la prochaine sera surement définitif. Etant perfectioniste il me faut encore quelques revisions...
 
-LE LIEN : https://we.tl/t-CAHaEtJYK9
+Point qui changeront surement :
+-> Peut-être utiliser une police un peu plus stylé
+-> Mieux cadrer certains éléments
+-> Le changement de voix n'a pas encore été décidé 
+-> Voix de l'intro un poil trop bas encore
+-> Peaufinner certains effets 
+
+LIEN : https://we.tl/t-BdQkFUCXMy
+
+N'hésitez pas à donner des suggestions
