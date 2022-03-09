@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'LMI_NLP/bootstrap.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="{% static 'LMI_NLP/Rex.css' %}">
@@ -13,92 +14,169 @@
     <title>Rexana</title>
 </head>
 <body>
-    <body>
-        <!-- Proper html tag is nav not navbar   -->
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item">
-                <div class="logo"> <a href="#"><img class="img" src="{% static "LMI_NLP/images/logo.svg"%}"></img></a></div>
-             
-            </li>
-            <li class="nav-item">
-              <a href="#homepage">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a href="#steps">Fonctionnement</a>
-            </li>
-            <li class="nav-item">
-                <button class="btn-primary">Posez votre question</button>
-              </li>
-          </ul>
-        </nav>
+    <header>
+        <div class="container-fluid">
+            <div class="row pt-3">
+                    <div class="col-2 pt-2 text-center">
+                        <h2 class="logo">Rexana</h2>
+                    </div>
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-8 pt-4">
+                        <div class="menu" id="homepage">
+                            <ul>
+                                <li><a href="#homepage">Accueil</a></li>
+                                <li><a href="#steps">Fonctionnement</a></li>
+                                <li><a href="Execution.html">Posez votre question</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+        </div>
+        </div>
+    </header>
 
-    
 
-            <div id="container1">
-                    <div class = "H1" id = "homepage" > 
-                        <section >
-                            <h1>Une <span style="color : #1563A5">intelligence</span> qui <span style="color : #9D7FC6;">explorera</span> les
-                                <span style="color : #9D7FC6;">connaissances</span>  du monde pour <span style="color : #9D7FC6;">vous</span></h1> 
-                            <div class = "CH1">
-                                    Rexana est une intelligence artificielle
-                                    qui saura repondre a vos questions,
-                                    en faisant, comme toutes personne humaine ferait
-                                    quand elle a une question: chercher dans Wikipedia
+
+        <div class="container-fluid">
+            <div class="row pt-4">
+                <div class="col-6 pt-4">
+                    <div class="row">
+                        <div class="col-12 py-6 text-align-left">
+                            <div class="H1" >
+                                Une <span style="color : #1563A5">intelligence</span> qui <span style="color : #9D7FC6;">explorera</span> les
+                                    <span style="color : #9D7FC6;">connaissances</span>  du monde pour <span style="color : #9D7FC6;">vous</span>
                             </div>
-                    </section>
-            
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class = "CH1">
+                                Rexana est une intelligence artificielle
+                                qui saura repondre a vos questions,
+                                en faisant, comme toutes personne humaine ferait
+                                quand elle a une question: chercher dans Wikipedia
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <input class="bt" type="button" value="posez votre question !">
+                        </div>
+
+                    </div>
+                   
+
+                </div>
+
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="rex">
+                                {% load static %}  <img src="{% static "LMI_NLP/images/rex.svg"%}" alt="" class="img-fluid"/>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                   
+                </div>
             </div>
-            <div class="rex">
-                {% load static %}  <img src="{% static "LMI_NLP/images/rex.svg"%}" alt=""/>
+        
+        <div class="row">
+            <div class="col-4">
             </div>
-       
+            <div class="col-4 text-center">
+                <div class="titre" id="steps">Fonctionnement</div>
+            </div>
+            <div class="col-4">
+
+            </div>
         </div>
 
-    <div id="container2">
-        <div class="titre" id="steps">Fonctionnement</div>
-        <div class="sousT">L’intelligence Artificielle, c’est quoi?</div>       
-        <div class="content1">
-            L’intelligence artificielle (IA) désigne, de manière générale, le comportement comparable à celui d’un être humain, 
-            présenté par une machine ou un système. Dans la forme la plus élémentaire de l’IA, les ordinateurs sont programmés pour 
-            « imiter » le comportement humain, en exploitant des quantités massives de données issues d’exemples antérieurs de 
-            comportements similaires. Cela peut aller de la reconnaissance des différences entre un chat et un oiseau à 
-            l’exécution d’activités complexes dans une usine de fabrication.
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="sousT">L’intelligence Artificielle, c’est quoi?</div>
+            </div>
+            <div class="col-6 py-4">
+                <div class="content1">
+                    L’intelligence artificielle (IA) désigne, de manière générale, le comportement comparable à celui d’un être humain, 
+                    présenté par une machine ou un système. Dans la forme la plus élémentaire de l’IA, les ordinateurs sont programmés pour 
+                    « imiter » le comportement humain, en exploitant des quantités massives de données issues d’exemples antérieurs de 
+                    comportements similaires. Cela peut aller de la reconnaissance des différences entre un chat et un oiseau à 
+                    l’exécution d’activités complexes dans une usine de fabrication.
+        
+                </div> 
 
-        </div> 
+            </div>
+        </div>
 
-        <div class="sousT2">Rexana c'est qui ?</div>       
-        <div class="content2">
-            Rexana est notre intelligence artificielle, qui, en lui posant une question, pourra y répondre en explorant les données qu'il y a dans Wikipedia et de ce qu'elle avait déja comme informations.
-           Voici les étapes que suit Rexana pour trouver la réponse aux questions posées 
-        </div> 
+        <div class="row justify-content-center">
+            <div class="col-12 text-center pt-6">
+                <div class="sousT2">Rexana c'est qui ?</div>  
+            </div>
+            <div class="col-6 py-4">
+                <div class="content2">
+                   Rexana est une intelligence artificielle qui utilise un modèle de réseaux de neurones entrainé disponible sur internet, 
+                   ce dernier s'apelle <span style="font-weight: bold; color : #9D7FC6;">Piaf</span>, ce dernier est très performant. <br>
+                   pour trouver les réponses aux questions posées, elle explore la base de données de WIKIPEDIA. <br>
+                   Les etapes que suit Rexana sont :
+                </div> 
+            </div>
+        </div>
 
-    </div>
 
 
-    <div id="container3"> 
-    </div class='txt1'>
-         <div class="sousT3">Etape 1</div>       
-        <div class="content3">
-        Analyse syntaxique : en délimitant les mots et la ponctuation; Rexana comprend qu'il y a
-        des espaces entre les mots et que ces derniers forment une phrase, grâce au point. 
-        Exemple : "j'ai / perdu /  mon / mot / de /  passe.". 
-        Aanalyse  sémantique : determination et comprehension des mots cles. 
-        elle comprend dans l'exemple précédent "mot de passe" se rapproche beaucoup des mots "identifiant" ou "utilisateur".
+            <div class="row">
+                <div class="col-4">
+                    <div class="col-12 text-center py-4">
+                        <div class="sousT3">Etape 1</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-10 text-center">
+                            <div class="content3">
+                                <span style="font-weight: bold; color : #9D7FC6;">Analyse syntaxique et sémantique de la phrase</span> <br>
+                                en délimitant les mots et la ponctuation; Rexana comprend qu'il y a
+                                des espaces entre les mots, ceci servira  à déterminer et à comprendre certains mots clés.
+                               
+                            </div> 
+                        </div>
+                    </div>
+                </div>
 
-        </div> 
-    </div>
-</div>  
+                <div class="col-4">
+                    <div class="col-12 text-center py-4">
+                        <div class="sousT4">Etape 2</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-10 text-center">
+                            <div class="content4">
+                                <span style="font-weight: bold; color : #9D7FC6;">détermination du théme</span> <br>
+                                grâce à l'Analyse sémantique et syntaxique, il est en effet possible de trouver le théme qu'englobe la question, qu'on explorera par la suite pour trouver la réponse
+                                à la question
+                    
+                            </div> 
+                    </div>
+                    </div>
+                </div>
 
-    
-    <div id="container4">
-    <div class="txt2">
-        <div class="sousT4">Etape 2</div>       
-        <div class="content4">
-            determination du théme : grace a l'Analyse sémantique et syntaxique, il est en effet possible de trouver le theme qu'englobe la question, qu'elle explorera par la suite pour trouver la réponse
-                a la question
-        </div> 
-    </div>
+                <div class="col-4">
+                    <div class="col-12 text-center py-4">
+                        <div class="sousT4">Etape 3</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-10 text-center">
+                            <div class="content4">
+                                <span style="font-weight: bold; color : #9D7FC6;">Ciblage de la réponse</span> <br> aprés avoir trouver la réponse adéquate, Rexana nous la transmet en indiquant également le lien Wikipedia dans lequel elle a pioché la réponse      
+                            </div> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+          
+<div class="container-fluid">
+   
 </div>
     
     
