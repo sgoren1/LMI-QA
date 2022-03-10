@@ -27,7 +27,7 @@ with open('/etc/secret_key_django.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '206.189.119.153', 'www.rexana.be', 'rexana.be']
+ALLOWED_HOSTS = ['localhost', '206.189.119.153', 'www.rexana.tech', 'rexana.tech']
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap',
 ]
 
 MIDDLEWARE = [
@@ -116,8 +117,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, '/LMI_NLP/static')]
-STATIC_ROOT = '/home/LMI_NLP/Wiki_QA_System-master/mysite/static/'
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'LMI_NLP/static')]
+STATIC_ROOT = '/home/yizhu/Wiki_QA_System-master/mysite/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

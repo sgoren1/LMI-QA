@@ -1,29 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth:700,400&display=swap');
+
+/* The component will reset browser's styles of link */
 *{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background: #442D7C;
+
+	background: #442D7C;
 }
 
+body{
+	width : 100%;
+	margin : 0;
+}
+
+
+.r-link{
+	--uirLinkDisplay: var(--rLinkDisplay, inline-block);
+	--uirLinkTextColor: var(--rLinkTextColor);
+	--uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+	background-color: #FFFFFF;
+	display: var(--uirLinkDisplay) !important;
+	color: var(--uirLinkTextColor) !important;
+	text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+/* The component will reset browser's styles of titles */
+
+.r-title{
+	--uirTitleMarginTop: var(--rTitleMarginTop, 0);
+	--uirTitleMarginBottom: var(--rTitleMarginBottom, 0);
+	background-color: #FFFFFF;
+
+	margin-top: var(--uirTitleMarginTop) !important;
+	margin-bottom: var(--uirTitleMarginBottom) !important;
+}
+
+/*
+=====
+CORE STYLES
+=====
+*/
 .logo{
-    position: absolute;
-    width: 257px;
-    height: 53px;
+
+	width: 100%;
     left: 94px;
     top: 39px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 44px;
     line-height: 49px;
-    color: #E5E5E5;
+    color: #000000;
 }
 
 .menu{
-    position: absolute;
-    width: 700px;
-    height: 27px;
-    left: 1000px;
+	width: 100%;
+	left : 1000px;
     top: 50px;
 }
 
@@ -45,7 +74,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
@@ -54,15 +83,15 @@ ul li a:hover{
     color: #9D7FC6
 }
 
+
+
+
+
 .form{
-    display: block;
+    top: 150px;
+	width : 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 931px;
-    height: 100px;
-
-    top: 450px;
-    bottom: 300px;
     border-radius: 60px;
 }
 
@@ -78,4 +107,245 @@ ul li a:hover{
     border-radius: 60px;
 }
 
+
+
+
+
+.animated-underline{
+	--uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
+	--uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 2px);
+	--uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, currentColor);
+	--uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
+	--uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
+
+	/*
+		1. For multi-line animated underline the "inline" value for the display property is compulsory.
+		2. Adds opportunity to create multi-line padding
+	*/
+
+	--rLinkDisplay: inline; /* 1 */
+
+	background-image: linear-gradient(0, var(--uiAnimatedUnderlineBgColor) 0, var(--uiAnimatedUnderlineBgColor));
+	background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight);
+	background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY);
+	background-repeat: no-repeat;
+
+	-webkit-box-decoration-break: clone; /* 2 */
+	box-decoration-break: clone; /* 2 */
+
+	will-change: background-size;
+	transition: background-size .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*
+=====
+SETTINGS
+=====
+*/
+
+:root{
+	--animatedUnderlineHeight: 1rem;
+	--animatedUnderlineBgColor: var(--accentColor);
+}
+
+.animated-underline_type1{
+	--animatedUnderlineWidth: 100%;
+}
+
+.animated-underline_type1:hover{
+	--animatedUnderlineHeight: 100%;
+}
+
+.animated-underline_type2{
+	--animatedUnderlineWidth: 100%;
+}
+
+.animated-underline_type2:hover{
+	--animatedUnderlineWidth: 0;
+}
+
+
+
+
+
+/*
+=====
+DEMO
+=====
+*/
+
+:root{
+	--mainColor: #FFFFFF;
+	--accentColor: #ff7eb2;
+	--accentColorDark: #f15493;
+	--blackColor: #222;
+	--whiteColor: #fff;
+	--rLinkTextColor: var(--blackColor);
+}
+
+body{
+
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+	color: var(--blackColor);
+	background-color: #442D7C;
+}
+
+.page{
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page__name-effect{
+	display: inline-flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: .875rem;
+}
+
+.page__name-effect::before{
+	content: "";
+	width: 3.75rem;
+	height: 2px;
+	background-color: #FFFFFF;
+	margin-top: .25rem;
+	margin-right: .625rem;
+}
+
+.page__section:nth-child(n+2){
+	margin-top: 5rem;
+}
+
+.page__group{
+	margin-top: 450px;
+}
+
+.news{
+	position: relative;
+
+	padding: 70px 6%;
+	border-top: 6px solid;
+
+	border-radius: 4px;
+
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+	background-color: var(--whiteColor);
+}
+
+.news:nth-child(n+2){
+	margin-top: 3rem;
+}
+
+
+.news__title{
+
+	font-family: 'Amaranth', sans-serif;
+	line-height: 1.25;
+}
+
+.news__link::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.news__content{
+		background-color: #FFFFFF;
+
+	margin-top: 1.875rem;
+}
+
+p{
+		background-color: #FFFFFF;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.78;
+}
+
+@media (max-width: 640px){
+
+	html{
+		font-size: 93.75%;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px){
+
+	html{
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 960px){
+
+	html{
+		font-size: 106.25%;
+	}
+}
+
+@media (min-width: 961px){
+
+	html{
+		font-size: 112.5%;
+	}
+}
+
+@media (max-width: 960px){
+
+	.page{
+			width: 100%;
+
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.page__name-effect{
+		padding-left: .625rem;
+		padding-right: .625rem;
+	}
+
+	.news__title{
+
+		--rTitleMarginTop: .75rem;
+		font-size: 1.75rem;
+	}
+}
+
+@media (min-width: 961px){
+
+	.page{
+			width: 100%;
+
+		padding: 80px 50px;
+	}
+
+	.news__header{
+		display: flex;
+		align-items: flex-start;
+			background-color: #FFFFFF;
+
+		padding-left: 1.5rem;
+		padding-right: 2.5rem;
+	}
+
+
+	.news__title{
+
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 1301px){
+
+	.page__group{
+		padding-left: 190px;
+		padding-right: 100px;
+	}
+}
 
