@@ -1,6 +1,7 @@
 *{  background: #442D7C; }
 
 .logo{
+    
     font-family: 'Poppins', sans-serif;
     font-style: bold;
     font-weight: 800;
@@ -150,3 +151,6 @@ ul li a:hover{
     color: #e5e5e5;
 }
 
+#footer-bg{
+    background-color: #1563A5;
+}
