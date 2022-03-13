@@ -39,15 +39,15 @@ CORE STYLES
 =====
 */
 .logo{
-
 	width: 100%;
     left: 94px;
     top: 39px;
     font-family: 'Poppins', sans-serif;
+    font-style: bold;
     font-weight: 800;
     font-size: 44px;
     line-height: 49px;
-    color: #000000;
+    color: #E5E5E5;
 }
 
 .menu{
