@@ -1,0 +1,276 @@
+1
+00:00:19,286 --> 00:00:26,085
+De nos jours, les programmes intelligents sont très répandus et très présents dans la vie de tous les jours.
+
+2
+00:00:26,086 --> 00:00:32,299
+Une des fonctionnalités les plus utilisées qu'offre l'intelligence artificielle est le système de question/réponse.
+
+3
+00:00:32,300 --> 00:00:34,013
+Le principe est simple :
+
+4
+00:00:34,014 --> 00:00:35,570
+Nous posons une question à un programme
+
+5
+00:00:35,571 --> 00:00:40,156
+ce dernier l'analyse et le comprend pour enfin essayer d'y répondre.
+
+6
+00:00:40,157 --> 00:00:42,142
+Mais comment tout cela fonctionne ?
+
+7
+00:00:42,143 --> 00:00:48,486
+Rexana, notre intelligence artificielle va nous expliquer comment fonctionne son système de question/réponse.
+
+8
+00:00:51,499 --> 00:00:55,784
+Dis-nous Rexana, comment comprends-tu nos questions ?
+
+9
+00:00:55,785 --> 00:00:59,913
+Je l'analyse, ce qui me permet de délimiter les mots et la ponctuation.
+
+10
+00:00:59,914 --> 00:01:06,142
+Par exemple : "Je mange une pomme".
+
+11
+00:01:06,143 --> 00:01:11,528
+Ici, je comprends qu'il y a des espaces entre les mots et que ceux-ci forment une phrase grâce au point.
+
+12
+00:01:11,529 --> 00:01:16,185
+ C'est ce qu'on appelle l'analyse syntaxique.
+
+13
+00:01:16,186 --> 00:01:20,829
+Ensuite, j'effectue une analyse sémantique.
+
+14
+00:01:21,300 --> 00:01:27,242
+C'est-à-dire que je fais en sorte de comprendre les mots-clés.
+
+15
+00:01:27,243 --> 00:01:30,599
+Par exemple : "J'ai perdu mon mot de passe".
+
+16
+00:01:30,600 --> 00:01:33,285
+Je comprends que le mot "mot de passe" se rapproche beaucoup des mots
+
+17
+00:01:33,286 --> 00:01:37,957
+ "Identifiant" ou "Utilisateur" par exemple.
+
+18
+00:01:47,000 --> 00:01:49,156
+Tout cela m'aide à "comprendre" la phrase
+
+19
+00:01:49,157 --> 00:01:51,513
+et de cibler les thèmes qui s'en rapprochent.
+
+20
+00:01:51,514 --> 00:01:56,899
+Il existe aujourd'hui des outils très puissants pour le traitement de texte qui font tout cela en plusieurs langues
+
+21
+00:01:56,900 --> 00:01:59,986
+et sont accessibles très facilement sur Internet.
+
+22
+00:02:04,028 --> 00:02:07,884
+J'ai lu quelque part que les intelligences artificielles s'entrainent d'elles-mêmes
+
+23
+00:02:07,885 --> 00:02:10,913
+afin de fonctionner correctement, est-ce vrai ?
+
+24
+00:02:10,914 --> 00:02:14,013
+Une intelligence artificielle doit apprendre
+
+25
+00:02:14,014 --> 00:02:15,827
+comme le fait un humain.
+
+26
+00:02:15,828 --> 00:02:19,127
+En résumé, si on me donne beaucoup de textes à analyser
+
+27
+00:02:19,128 --> 00:02:21,413
+et qu'on me corrige à chaque fois que je me trompe
+
+28
+00:02:21,414 --> 00:02:23,799
+je vais devenir de plus en plus performant
+
+29
+00:02:23,800 --> 00:02:29,399
+et je fournirai des réponses de plus en plus correctes et précises.
+
+30
+00:02:29,400 --> 00:02:33,485
+C'est ce qu'on appelle de l'apprentissage supervisé.
+
+31
+00:02:33,486 --> 00:02:38,486
+À la fin de cet apprentissage, on obtient ce qu'on appelle un modèle.
+
+32
+00:02:40,800 --> 00:02:43,756
+Le modèle est comme le cerveau d'une intelligence artificielle
+
+33
+00:02:43,757 --> 00:02:47,299
+car toute donnée qu'elle recevra, passera par ce modèle mathématique.
+
+34
+00:02:47,300 --> 00:02:52,599
+Et donc, le résultat dépendra de la performance de ce dernier.
+
+35
+00:02:52,600 --> 00:02:54,556
+Pour ce projet par exemple
+
+36
+00:02:54,557 --> 00:02:58,942
+j'utilise un modèle de réseaux de neurones entrainé disponible sur Internet.
+
+37
+00:02:58,943 --> 00:03:02,871
+Il s'appelle Piaf et il est très performant.
+
+38
+00:03:04,000 --> 00:03:08,642
+Woaw, un réseau de neurones ? Comme dans un cerveau humain ?
+
+39
+00:03:08,643 --> 00:03:10,642
+Non, mais ça y ressemble.
+
+40
+00:03:10,643 --> 00:03:13,956
+En réalité les réseaux de neurones sont des structures informatiques
+
+41
+00:03:13,957 --> 00:03:17,328
+dont le concept est inspiré du système nerveux humain.
+
+42
+00:03:17,329 --> 00:03:20,770
+Dans un cerveau, il existe des millions de neurones
+
+43
+00:03:20,771 --> 00:03:24,099
+qui transmettent de l'information depuis ou vers le reste du corps.
+
+44
+00:03:24,100 --> 00:03:27,857
+En informatique, un réseau de neurones est composé de couches :
+
+45
+00:03:28,814 --> 00:03:31,070
+La couche des entrées qui reçoit les données
+
+46
+00:03:31,071 --> 00:03:32,999
+une ou plusieurs couches intermédiaires
+
+47
+00:03:33,000 --> 00:03:35,628
+et la couche des sorties qui donne le résultat.
+
+48
+00:03:35,629 --> 00:03:38,214
+Chaque couche peut contenir énormément de nœuds
+
+49
+00:03:38,215 --> 00:03:40,085
+qui représentent les neurones.
+
+50
+00:03:40,086 --> 00:03:44,571
+Les nœuds sont liés entre eux d'une couche à l'autre, d'où cette forme d'arbre.
+
+51
+00:03:44,572 --> 00:03:47,171
+Pour faire passer l'information entre les couches
+
+52
+00:03:47,172 --> 00:03:51,442
+les neurones appliquent une fonction mathématique aux données qu'ils reçoivent.
+
+53
+00:03:51,443 --> 00:03:55,813
+Cette fonction peut varier d'un réseau de neurones à un autre et peut affecter le résultat.
+
+54
+00:03:55,814 --> 00:03:58,642
+Le processus d'apprentissage se fait ici
+
+55
+00:03:58,643 --> 00:04:01,813
+quand le réseau fait varier cette fonction afin de s'adapter aux entrées
+
+56
+00:04:01,814 --> 00:04:05,386
+et donner des résultats de plus en plus correctes.
+
+57
+00:04:06,470 --> 00:04:09,912
+Mais comment connais-tu les réponses à nos questions ?
+
+58
+00:04:09,913 --> 00:04:12,141
+ Je ne connais pas les réponses initialement.
+
+59
+00:04:12,142 --> 00:04:15,427
+Je les recherche en explorant les informations que j'ai.
+
+60
+00:04:15,428 --> 00:04:19,584
+Pour ce projet, je me fie à la base de données de Wikipédia.
+
+61
+00:04:19,585 --> 00:04:22,541
+Une base de données c'est un ensemble d'information.
+
+62
+00:04:22,542 --> 00:04:26,970
+Les analyses syntaxiques et sémantiques m'aident à faire une recherche dans ma base de données
+
+63
+00:04:26,971 --> 00:04:29,457
+et cibler les meilleures pages selon la question.
+
+64
+00:04:40,700 --> 00:04:45,913
+Une fois fini, je peux déployer ces résultats dans mon réseau de neurones super entrainé
+
+65
+00:04:45,914 --> 00:04:50,786
+qui me dira si oui ou non, cette page Wikipédia est une réponse à ma question.
+
+66
+00:04:51,457 --> 00:04:55,829
+ Voila , c'était notre brève explication du fonctionnement d'une IA, par Rexana.
+
+67
+00:04:55,830 --> 00:04:58,758
+ N'hésitez pas à consulter notre site web, affiché à l'écran
+
+68
+00:04:58,759 --> 00:05:01,829
+pour tester par vous même et avoir plus d'informations sur notre projet.
+
+69
+00:05:01,830 --> 00:05:03,086
+ A bientôt !
+
