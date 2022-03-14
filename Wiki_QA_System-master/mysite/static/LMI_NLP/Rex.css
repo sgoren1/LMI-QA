@@ -1,0 +1,152 @@
+*{  background: #442D7C; }
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 49px;
+    color: #E5E5E5;
+}
+
+
+.menu{
+    position: absolute;
+
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    width: 20vw;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #9D7FC6
+}
+
+.H1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 2vw;
+    line-height: 10vh;
+    color: #e5e5e5;
+}
+
+.CH1{ 
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 2vw;
+    line-height: 7vh;
+    color: #e5e5e5;
+}
+
+.bt{
+    margin-left: 50%;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.rex{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.titre{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e5e5e5;
+}
+
+.sousT{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #007BB8;
+}
+
+
+.content1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 5vh;
+    color: #e5e5e5;
+}
+
+.sousT2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #007BB8;
+}
+
+.content2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 5vh;
+    color: #e5e5e5;
+}
+
+.sousT3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #007BB8;
+}
+
+.content3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 5vh;
+    color: #e5e5e5;
+}
+
+
+.sousT4{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #007BB8;
+}
+
+.content4{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 5vh;
+    color: #e5e5e5;
+}
+
